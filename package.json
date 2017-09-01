@@ -1,0 +1,44 @@
+{
+    "name": "RenelFSE",
+    "version": "2.1.0",
+    "description": "Renelco FSE for Android 6.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "platforms": [
+        "android"
+    ],
+    "cordovaPlatforms": [
+        "android@6.0.1"
+    ],
+    "cordovaPlugins": [
+        "cordova-plugin-camera@1.1.0",
+        "cordova-plugin-contacts@1.1.0",
+        "cordova-plugin-device@1.0.1",
+        "cordova-plugin-file@2.1.0",
+        "cordova-plugin-media@1.0.1",
+        "cordova-plugin-media-capture@1.0.1",
+        "cordova-plugin-network-information@1.0.1",
+        "cordova-plugin-splashscreen@2.1.0",
+        "cordova-plugin-statusbar@1.0.1",
+        "cordova-plugin-vibration@1.2.0",
+        "com.ionic.keyboard@1.0.5"
+    ],
+    "devDependencies": {
+        "load-grunt-tasks": "~0.4.0",
+        "time-grunt": "~0.3.1",
+        "grunt": "~0.4.4",
+        "grunt-shell": "~0.6.4"
+    },
+    "dependencies": {
+        "cordova-android": "^6.2.3"
+    },
+    "cordova": {
+        "platforms": [
+            "android"
+        ]
+    }
+}

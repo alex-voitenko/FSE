@@ -1,0 +1,2924 @@
+.m1-multipanel{
+  overflow: hidden;
+}
+
+.m1-root{
+  -webkit-user-select: none;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+
+.m1-top-root{
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+}
+
+.m1-textfield{
+  -webkit-appearance: none;
+  -webkit-box-shadow: none !important;
+  border: 0;
+  padding: 0px 0px 0px 0px;
+}
+
+.m1-textfield-border{
+  -webkit-border-radius: 5px;
+  background-image: 
+    -webkit-gradient(linear, 50.0% 0.0%, 50.0% 3.0, from(rgba(0,0,0,0.13)), to(rgba(0,0,0,0)));
+  border: 1px solid rgb(126,126,126);
+  padding: 0px 5px 0px 5px;
+}
+
+.m1-list{
+  -webkit-padding-start: 0px;
+  color: black;
+  font: bold 17px "Helvetica Neue", Helvetica;
+  margin: 0px 0px 0px 0px;
+}
+
+.m1-navbar{
+  border-top-color: transparent;
+}
+
+.m1-toolbar{
+  border-top-color: transparent;
+}
+
+.m1-homescreen-prompt{
+  -webkit-box-sizing: content-box;
+  display: block;
+  font-size: 16px;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 450px;
+  z-index: 99;
+}
+
+.m1-loading-spinner{
+  float: left;
+  width: 50px;					/* Added by renelco */
+  height: 50px;					/* Added by renelco */
+  padding: 1px 3px 10px 3px;	/* Modified by renelco, previous 3px 3px 3px 3px) */ 
+}
+
+.m1-loading-text{
+  display: block;
+  float: left;
+  max-width: 350px;
+  min-height: 25px;
+  padding: 10px 0px 10px 5px;
+  text-align: left;
+  color: rgba(255,128,64,255);	/* Added by renelco */
+}
+
+.m1-loading{
+  display: none;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 200px;					/* Modified by renelco, previous 150px */
+  vertical-align: middle;
+  width: 100%;
+  z-index: 99;
+}
+
+.m1-button{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0);
+  color: white;
+  cursor: pointer;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.m1-map{
+  background-color: rgb(255,255,255);
+  white-space: normal;
+}
+
+.m1-iscroll-wrapper{
+  overflow: hidden;
+}
+
+.m1-combobox{
+  overflow: hidden;
+}
+
+.m1-root .m1-aux-hidden-div{
+  display: block;
+  height: 0px;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  width: 0px;
+}
+
+
+  .m1-root .m1-combobox,.m1-root .m1-toolbar,.m1-root .m1-iscroll-wrapper,.m1-root .m1-map-container,.m1-root .m1-loading-text,.m1-root .m1-toggle,.m1-root .m1-button,.m1-root .m1-hyperlink,.m1-root .m1-custom-html,.m1-root .m1-video,.m1-root .m1-multipanel,.m1-root .m1-iscroll-scroller,.m1-root .m1-element,.m1-root .m1-text,.m1-root .m1-tabbar-button,.m1-root .m1-audio,.m1-root .m1-radiobutton,.m1-root .m1-loading,.m1-root .m1-multipanel-page,.m1-root .m1-tabbar,.m1-root .m1-placeholder,.m1-root .m1-hyperlink-container,.m1-root .m1-select-list-menu,.m1-root .m1-image,.m1-root .m1-homescreen-prompt,.m1-root .m1-list,.m1-root .m1-list-footer,.m1-root .m1-play-button,.m1-root .m1-video-container,.m1-root .m1-loading-spinner,.m1-root .m1-textfield,.m1-root .m1-list-header,.m1-root .m1-textarea,.m1-root .m1-video-poster-shadow,.m1-root .m1-toolbar-icon,.m1-root .m1-checkbox,.m1-root .m1-video-poster,.m1-root .m1-tabbar-button-label,.m1-root .m1-selection-list,.m1-root .m1-hyperlink-internal,.m1-root .m1-toggle5,.m1-root .m1-navbar,.m1-root .m1-list > li,.m1-root .m1-list > li > div,.m1-root .m1-list > li > img,.m1-root .m1-list > li > label,.m1-root .m1-list > li > div > img,.m1-root .m1-toggle > div,.m1-root .m1-toggle5 > div,.m1-root .m1-button > span
+  {
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  display: block;
+  float: none;
+  position: relative;
+  white-space: nowrap;
+}
+
+.m1-root .m1-custom-html{
+  line-height: normal;
+  overflow: hidden;
+  white-space: normal;
+}
+
+.m1-root .m1-multipanel-page{
+  display: none;
+  position: absolute;
+}
+
+.m1-root .m1-selected.m1-multipanel-page{
+  display: block;
+}
+
+.m1-root :focus{
+  outline: none;
+}
+
+.m1-root textarea.m1-textarea{
+  white-space: normal;
+}
+
+.m1-root textarea.m1-textarea.m1-placeholder{
+  color: rgb(153,153,153);
+}
+
+.m1-list > li{
+  -webkit-padding-start: 0px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background-color: rgb(255,255,255);
+  background-image: 
+    -webkit-gradient(linear, 0.0% 0.0%, 0.0% 100.0%, from(rgba(255,255,255,0.3)), to(rgba(255,255,255,0)));
+  background-position: right center;
+  background-repeat: no-repeat;
+  border: 1px solid #A8A9AC;
+  border-bottom-width: 0px;
+  color: #666;
+  list-style: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.m1-list > li .m1-textfield{
+  background-image: 
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg==);
+}
+
+.m1-list > li.m1-clicked.m1-highlight{
+  background-color: rgb(2,91,230);
+  border-color: transparent;
+  border-width: 0px;
+  padding: 1px 1px 0px 1px;
+}
+
+.m1-list > li.m1-select-list-menu > div{
+  color: rgb(56, 84, 135);
+  font-family: Helvetica;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: lighter;
+  height: 100%;
+  overflow: hidden;
+  padding: 0px 0px 0px 0px;
+  text-align: right;
+  text-decoration: none;
+  width: 100%;
+}
+
+.m1-list > li.m1-select-list-menu > label{
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.m1-list > li.m1-select-list-menu.m1-clicked.m1-highlight > div{
+  color: rgb(255,255,255);
+}
+
+.m1-list > li.m1-select-list-menu.m1-clicked.m1-highlight > label{
+  color: rgb(255,255,255);
+}
+
+.m1-list > li.m1-selected > label{
+  color: #324F85;
+}
+
+.m1-list > li.m1-unclicked.m1-highlight{
+  -webkit-transition: background-color 0.15s ease-in-out;
+  background-color: rgb(255,255,255);
+  border-color: transparent;
+  border-width: 0px;
+  padding: 1px 1px 0px 1px;
+}
+
+.m1-plain-list.m1-list > li{
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+
+.m1-plain-list.m1-list > li.m1-last{
+  border-bottom-width: 1px;
+}
+
+.m1-plain-list.m1-list > li.m1-list-footer{
+  background-image: 
+    -webkit-gradient(linear, 0.0% 0.0%, 0.0% 100.0%, from(rgb(139,159,171)), to(rgb(181,193,201)));
+  padding: 0 0 0 5px;
+}
+
+.m1-plain-list.m1-list > li.m1-list-header{
+  background-image: 
+    -webkit-gradient(linear, 0.0% 0.0%, 0.0% 100.0%, from(rgb(139,159,171)), to(rgb(181,193,201)));
+  padding: 0 0 0 5px;
+}
+
+.m1-plain-list.m1-list > li.m1-select-list-menu{
+  -webkit-background-size: 13px 12px, 100% 100%;
+}
+
+.m1-rounded-list.m1-list > li.m1-first{
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+}
+
+.m1-rounded-list.m1-list > li.m1-last{
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-width: 1px;
+}
+
+.m1-rounded-list.m1-list > li.m1-list-footer{
+  background-color: rgba(0,0,0,0);
+  background-image: none;
+  border-color: transparent;
+  text-align: center;
+}
+
+.m1-rounded-list.m1-list > li.m1-list-header{
+  background-color: rgba(0,0,0,0);
+  background-image: none;
+  border-color: transparent;
+}
+
+.m1-rounded-list.m1-list > li.m1-select-list-menu{
+  -webkit-background-size: 18px 12px, 100% 100%;
+}
+
+li > .m1-list .m1-text{
+  -webkit-box-sizing: border-box;
+}
+
+.m1-toggle5 > div{
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.m1-toggle5 input[type='checkbox']{
+  -webkit-appearance: textarea;
+  -webkit-border-radius: 13px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-transition: background-position 0.15s ease-in-out;
+  background: transparent url(res/images/on_off5.png) -50.0px 0px no-repeat;
+  border: 0;
+  height: 27px;
+  margin: 0px 0px 0px 0px;
+  width: 77px;
+}
+
+.m1-toggle5 input[type='checkbox']:checked{
+  background-position: 0px 0px;
+}
+
+.m1-homescreen-prompt img{
+  display: block;
+  float: left;
+  margin: auto 20px 20px auto;
+}
+
+.m1-loading > div{
+  -webkit-border-radius: 8px;
+  -webkit-box-sizing: border-box;
+  background: rgba(0,0,0,.7);
+  color: rgba(255,255,255,.8);
+  display: table;
+  margin: 0px auto 0px auto;
+  padding: 0px 15px 0px 15px;
+  text-align: left;
+  width: auto;
+}
+
+.m1-combobox:focus{
+  background-color: rgb(0,0,255);
+}
+
+.m1-background-1{
+  background-color: rgb(100,100,100);
+  background-image: none;
+}
+
+.m1-font-1{
+  color: rgb(255,128,64);
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m1-button.m1-font-2{
+  color: rgb(255,255,255);
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m1-button.m1-shadow-1{
+  text-shadow: rgb(64,64,64) 0px -1px 1px;
+}
+
+.m1-btn-1{
+  -webkit-border-image: url(res/images/backButton1.png) 10 10 10 26 stretch stretch;
+}
+
+.m1-clicked.m1-btn-2{
+  -webkit-border-image: url(res/images/backButton2.png) 10 10 10 26 stretch stretch;
+}
+
+.m1-background-2{
+  background-color: rgba(0,0,0,0);
+  background-image: 
+    -webkit-gradient(linear, 50.0% 0.0, 50.0% 100.0%, from(rgb(249,175,100)), to(rgb(255,128,0)), color-stop(0.499,rgb(246,139,32)), color-stop(0.501,rgb(255,128,0)));
+}
+
+.m1-clicked.m1-button.m1-background-3{
+  background-color: rgba(0,0,0,0);
+  background-image: 
+    -webkit-gradient(linear, 50.0% 0.0, 50.0% 100.0%, from(rgb(251,192,162)), to(rgb(255,127,63)), color-stop(0.499,rgb(249,145,93)), color-stop(0.501,rgb(255,127,63)));
+}
+
+.m1-clicked.m1-button.m1-active-color-1{
+  color: rgb(255,128,0);
+}
+
+.m1-border-1{
+  -webkit-border-radius: 0px;
+}
+
+.m1-background-4{
+  background-color: rgb(255,255,255);
+  background-image: none;
+}
+
+.m1-border-2{
+  -webkit-border-radius: 5px;
+  border-color: rgb(255,255,255);
+  border-style: solid;
+}
+
+.m1-background-5{
+  background-color: rgba(0,0,0,0);
+  background-image: none;
+}
+
+.m1-button.m1-font-3{
+  color: rgb(255,255,255);
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m1-font-4{
+  color: rgb(0,0,0);
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.m1-font-5{
+  color: rgb(0,0,0);
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m1-font-6{
+  color: rgb(115,115,115);
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m1-btn-3,.m1-clicked.m1-btn-4{
+  -webkit-border-image: url(res/images/combobox3.png) 10 36 10 10 stretch stretch;
+}
+
+.m1-border-3{
+  -webkit-border-radius: 5px;
+  border-color: rgb(192,192,192);
+  border-style: solid;
+}
+
+.m1-border-4{
+  -webkit-border-radius: 5px;
+}
+
+.m1-background-7{
+  background-color: rgb(0,0,0);
+  background-image: none;
+}
+
+.m1-font-7{
+  color: rgb(115,115,115);
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m1-font-8{
+  color: rgb(115,115,115);
+  font-family: Helvetica;
+/*  font-size: 14px; */
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m1-font-9{
+  color: rgb(255,128,0);
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m1-border-5{
+  -webkit-border-radius: 0px;
+}
+
+.m1-font-10{
+  color: rgb(255,0,0);
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m1-btn-5,.m1-clicked.m1-btn-6{
+  -webkit-border-image: url(res/images/combobox3.png) 10 36 10 10 stretch stretch;
+}
+
+.m1-font-11{
+  color: rgb(115,115,115);
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m1-background-6,.m1-list.m1-rounded-list > li.m1-background-8{
+  background-color: rgb(230,230,230);
+  background-image: none;
+}
+
+
+  .m1-list.m1-rounded-list > li.m1-clicked.m1-highlight.m1-background-9,.m1-list.m1-rounded-list > li.m1-unclicked.m1-highlight.m1-background-10
+  {
+  background-color: rgb(2,91,230);
+  background-image: none;
+}
+
+.m1-font-12{
+  color: rgb(0,0,0);
+  font-family: Helvetica;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m1-list > li.m1-clicked.m1-highlight div.m1-active-color-2{
+  color: rgb(255,255,255);
+}
+
+.m1-shadow-2{
+  text-shadow: rgb(255,255,255) 0px 1px 1px;
+}
+
+.m1-border-6{
+  -webkit-border-radius: 0px;
+}
+
+
+  .m1-list.m1-rounded-list > li.m1-clicked.m1-highlight.m1-background-11,.m1-list.m1-rounded-list > li.m1-unclicked.m1-highlight.m1-background-12
+  {
+  background-color: rgba(0,0,0,0);
+  background-image: 
+    -webkit-gradient(linear, 50.0% 0.0%, 50.0% 100.0%, from(rgb(79,141,237)), to(rgb(2,91,230)));
+}
+
+
+  .m1-list.m1-rounded-list > li.m1-clicked.m1-highlight.m1-background-13,.m1-list.m1-rounded-list > li.m1-unclicked.m1-highlight.m1-background-14
+  {
+  background-color: rgba(0,0,0,0);
+  background-image: 
+    -webkit-gradient(linear, 50.0% 0.0%, 50.0% 100.0%, from(rgb(94,156,253)), to(rgb(1,90,230)), color-stop(0.499,rgb(23,113,252)), color-stop(0.501,rgb(12,106,252)));
+}
+
+.m1-btn-7,.m1-clicked.m1-btn-8{
+  -webkit-border-image: url(res/images/combobox3.png) 10 36 10 10 stretch stretch;
+}
+
+.m1-font-13{
+  color: rgb(0,0,0);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.m1-font-14{
+  color: rgb(0,0,0);
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.m1-list.m1-plain-list > li.m1-background-15{
+  background-color: rgb(255,128,64);
+  background-image: none;
+}
+
+
+  .m1-list.m1-plain-list > li.m1-clicked.m1-highlight.m1-background-16,.m1-list.m1-plain-list > li.m1-unclicked.m1-highlight.m1-background-17
+  {
+  background-color: rgb(255,188,155);
+  background-image: none;
+}
+
+.m1-font-15{
+  color: rgb(255,255,255);
+  font-family: Helvetica;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.m1-list > li.m1-clicked.m1-highlight div.m1-active-color-3{
+  color: rgb(128,128,128);
+}
+
+.m1-preload-images-1{
+  background-image: 
+    url(res/images/backButton1.png), url(res/images/backButton2.png), url(res/images/combobox3.png), url(res/images/combobox3.png), url(res/images/combobox3.png);
+  background-position: -10000px -10000px;
+  background-repeat: no-repeat;
+}
+
+#m1-RenelcoBMA_TimeClock-imgLogin.m1-clicked{
+  -webkit-border-image: url(images/btn_validation_onclick.png) 1 1 1 1 stretch stretch;
+}
+
+body{
+  margin: 0px 0px 0px 0px;
+  overflow: visible;
+}
+
+#m1-images-preloader{
+  height: 0px;
+  left: -3000px;
+  top: -3912px;
+  width: 0px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtMenuItem8{
+  height: 23px;
+  left: 5px;
+  line-height: 23px;
+  text-align: left;
+  top: 10px;
+  width: 180px;
+}
+
+#m1-RenelcoBMA_TimeClock-listItem8{
+  height: 44px;
+  left: 0px;
+  line-height: 44px;
+  top: 0px;
+  width: 190px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtMenuItem7{
+  height: 23px;
+  left: 5px;
+  line-height: 23px;
+  text-align: left;
+  top: 10px;
+  width: 180px;
+}
+
+#m1-RenelcoBMA_TimeClock-listItem7{
+  height: 44px;
+  left: 0px;
+  line-height: 44px;
+  top: 0px;
+  width: 190px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtMenuItem6{
+  height: 23px;
+  left: 5px;
+  line-height: 23px;
+  text-align: left;
+  top: 10px;
+  width: 180px;
+}
+
+#m1-RenelcoBMA_TimeClock-listItem6{
+  height: 44px;
+  left: 0px;
+  line-height: 44px;
+  top: 0px;
+  width: 190px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtMenuItem5{
+  height: 23px;
+  left: 5px;
+  line-height: 23px;
+  text-align: left;
+  top: 10px;
+  width: 180px;
+}
+
+#m1-RenelcoBMA_TimeClock-listItem5{
+  height: 44px;
+  left: 0px;
+  line-height: 44px;
+  top: 0px;
+  width: 190px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtMenuItem4{
+  height: 23px;
+  left: 5px;
+  line-height: 23px;
+  text-align: left;
+  top: 10px;
+  width: 180px;
+}
+
+#m1-RenelcoBMA_TimeClock-listItem4{
+  height: 44px;
+  left: 0px;
+  line-height: 44px;
+  top: 0px;
+  width: 190px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtMenuItem3{
+  height: 23px;
+  left: 5px;
+  line-height: 23px;
+  text-align: left;
+  top: 10px;
+  width: 180px;
+}
+
+#m1-RenelcoBMA_TimeClock-listItem3{
+  height: 44px;
+  left: 0px;
+  line-height: 44px;
+  top: 0px;
+  width: 190px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtMenuItem2{
+  height: 23px;
+  left: 5px;
+  line-height: 23px;
+  text-align: left;
+  top: 10px;
+  width: 180px;
+}
+
+#m1-RenelcoBMA_TimeClock-listItem2{
+  height: 44px;
+  left: 0px;
+  line-height: 44px;
+  top: 0px;
+  width: 190px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtMenuItem1{
+  height: 23px;
+  left: 5px;
+  line-height: 23px;
+  text-align: left;
+  top: 10px;
+  width: 180px;
+}
+
+#m1-RenelcoBMA_TimeClock-listItem1{
+  height: 44px;
+  left: 0px;
+  line-height: 44px;
+  top: 0px;
+  width: 190px;
+}
+
+#m1-RenelcoBMA_TimeClock-listMenu{
+  height: 352px;
+  left: 0px;
+  line-height: 352px;
+  top: -520px;
+  width: 190px;
+  visibility: hidden;
+}
+
+
+/********************/
+/* Page Settings    */
+/********************/
+
+#m1-RenelcoBMA_TimeClock-imgCancelSettings{
+  height: 56px;
+  line-height: 56px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-btnCancelSettings{
+  padding-top: 5px;
+  padding-left: 5px;
+  height: 66px;
+  width: 66px;
+  float: left;
+}
+
+#m1-RenelcoBMA_TimeClock-imgSaveSettings{
+  height: 56px;
+  line-height: 56px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-btnSaveSettings{
+  padding-top: 5px;
+  padding-right: 5px;
+  height: 66px;
+  width: 66px;
+  float: right;
+}
+
+#m1-RenelcoBMA_TimeClock-panelToolBarSettings{
+  position: fixed;
+  height: 66px;
+  left: 0px;
+  line-height: 66px;
+  margin-right: 0px;
+/*  top: -66px !important; */
+  bottom: 0px !important;
+  width: 100% !important;
+  z-index: 100 !important;
+}
+
+#m1-comp3{
+  border-top-color: transparent;
+  border-width: 1px 0px 0px 0px;
+  height: 27px;
+  left: 9px;
+  line-height: 40px;
+  top: 1px;
+  width: 77px;
+}
+
+#m1-RenelcoBMA_TimeClock-tgSettingsDebug{
+  height: 30px;
+  line-height: 30px;
+  margin-left: auto;
+  right: 11px;
+  top: -41px;
+  width: 95px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblSettingsDebug{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  margin-right: 116px;
+  text-align: left;
+  top: -13px;
+  width: auto;
+}
+
+#m1-comp2{
+  border-top-color: transparent;
+  border-width: 1px 0px 0px 0px;
+  height: 27px;
+  left: 9px;
+  line-height: 40px;
+  top: 1px;
+  width: 77px;
+}
+
+#m1-RenelcoBMA_TimeClock-tgSettingsAUTOSynchro{
+  height: 30px;
+  line-height: 30px;
+  margin-left: auto;
+  right: 11px;
+  top: -41px;
+  width: 95px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblSettingsAUTOSynchro{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  margin-right: 116px;
+  text-align: left;
+  top: -13px;
+  width: auto;
+}
+
+#m1-comp{
+  border-top-color: transparent;
+  border-width: 1px 0px 0px 0px;
+  height: 27px;
+  left: 9px;
+  line-height: 40px;
+  top: 1px;
+  width: 77px;
+}
+
+#m1-RenelcoBMA_TimeClock-tgSettingsLogFile{
+  height: 30px;
+  line-height: 30px;
+  margin-left: auto;
+  right: 11px;
+  top: -35px;
+  width: 95px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblSettingsLogFile{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  margin-right: 116px;
+  text-align: left;
+  top: -7px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-txtSettingsCustomerName{
+  height: 40px;
+  left: 10px;
+  line-height: 21px;
+  text-align: left;
+  top: -44px;
+  width: 317px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblSettingsCustomerName{
+  height: 26px;
+  left: 20px;
+  line-height: 26px;
+  text-align: left;
+  top: -43px;
+  width: 300px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblSettingsCustomerNameStar{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: -17px;
+  width: 10px;
+  color: red;
+}
+
+#m1-RenelcoBMA_TimeClock-cboAppConfigs{
+  border-width: 5px 18px 5px 5px;
+  height: 40px;
+  left: 10px;
+  line-height: 30px;
+  margin-right: 20px;
+  top: -22px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblSettingsHostUrl{
+  height: 26px;
+  left: 20px;
+  line-height: 26px;
+  text-align: left;
+  top: -21px;
+  width: 300px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblSettingsHostUrlStar{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: 5px;
+  width: 10px;
+  color: red;
+}
+
+#m1-RenelcoBMA_TimeClock-panelSettingsSystem{
+  border-width: 1px 1px 1px 1px;
+  height: 330px;
+  left: 10px;
+  line-height: 328px;
+  margin-right: 22px;
+  top: 10px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelSettings-scroller{
+  border-top-color: transparent;
+  border-width: 1px 0px 0px 0px;
+  height: 610px;
+  left: 0px;
+  line-height: 40px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelSettings{
+  height: 100% !important;
+  left: 0px;
+  line-height: 454px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageSettings-box{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageSettings{
+  height: 100.0%;
+  left: 0px;
+  top: 0px;
+  width: 100.0%;
+}
+
+
+/*
+ * Page WorkOrderMaterial
+ */
+ 
+#m1-RenelcoBMA_TimeClock-imgSaveWorkOrderMaterial{
+  height: 56px;
+  left: 276px;
+  line-height: 56px;
+  top: -160px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgDeleteWorkOrderMaterial{
+  height: 56px;
+  left: 180px;
+  line-height: 56px;
+  top: -104px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgCancelWorkOrderMaterial{
+  height: 56px;
+  left: 180px;
+  line-height: 56px;
+  top: -48px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtWorkOrderMaterialQuantity{
+  height: 40px;
+  left: 5px;
+  line-height: 26px;
+  text-align: left;
+  top: 10px;
+  width: 100px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblWorkOrderMaterialQuantity{
+  height: 19px;
+  left: 5px;
+  line-height: 26px;
+  text-align: left;
+  top: 1px;
+  width: 100px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtWorkOrderMaterialComment{
+  height: 40px;
+  left: 5px;
+  line-height: 21px;
+  text-align: left;
+  top: -2px;
+  width: 327px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtWorkOrderMaterialFlagNew{
+  height: 19px;
+  line-height: 19px;
+  margin-left: auto;
+  right: 13px;
+  text-align: center;
+  top: -4px;
+  width: 17px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblWorkOrderMaterialComment{
+  height: 26px;
+  left: 5px;
+  line-height: 26px;
+  text-align: left;
+  top: 16px;
+  width: 100px;
+}
+
+#m1-RenelcoBMA_TimeClock-cboWorkOrderMaterial{
+  border-width: 5px 18px 5px 5px;
+  height: 40px;
+  left: 5px;
+  line-height: 30px;
+  margin-right: 13px;
+  top: 13px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblWorkOrderMaterialName{
+  height: 19px;
+  left: 5px;
+  line-height: 26px;
+  text-align: left;
+  top: 5px;
+  width: 310px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelWorkOrderMaterial{
+  border-width: 1px 1px 1px 1px;
+  height: 225px;
+  left: 10px;
+  line-height: 223px;
+  margin-right: 20px;
+  top: 10px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageWorkOrderMaterial-box{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageWorkOrderMaterial{
+  height: 100.0%;
+  left: 0px;
+  top: 0px;
+  width: 100.0%;
+}
+
+#m1-RenelcoBMA_TimeClock-txtDayTasksSummaryDurationListItem{
+  height: 15px;
+  line-height: 15px;
+  margin-left: auto;
+  right: 29px;
+  text-align: right;
+  top: -3px;
+  width: 65px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtDayTasksSummaryListItem{
+  height: 15px;
+  left: 18px;
+  line-height: 15px;
+  text-align: left;
+  top: 12px;
+  width: 240px;
+}
+
+#m1-RenelcoBMA_TimeClock-lstDayTasksSummaryListItem-inner-div{
+  height: 40px;
+  left: -10px;
+  line-height: 40px;
+  margin-right: -20px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lstDayTasksSummaryListItem{
+  height: 40px;
+  left: 9px;
+  line-height: 40px;
+  margin-right: 18px;
+  overflow: visible;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lstDayTasksSummary{
+  height: 40px;
+  left: 0px;
+  line-height: 40px;
+  margin-right: 6px;
+  top: 2px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelDayTasksSummaryList-scroller{
+  border-top-color: transparent;
+  border-width: 1px 0px 0px 0px;
+  height: 600px;
+  left: 0px;
+  line-height: 40px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelDayTasksSummaryList{
+  height: 290px;
+  left: 0px;
+  line-height: 290px;
+  margin-right: 0px;
+  top: 55px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-txtDayTasksSummaryInfo{
+  height: 19px;
+  left: 10px;
+  line-height: 21px;
+  text-align: left;
+  top: 39px;
+  width: 326px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblDayTasksSummaryList{
+  height: 24px;
+  left: 10px;
+  line-height: 24px;
+  text-align: left;
+  top: 33px;
+  width: 326px;
+}
+
+#m1-RenelcoBMA_TimeClock-cboDayTasksSummaryActivities{
+  border-width: 5px 18px 5px 5px;
+  height: 40px;
+  left: 10px;
+  line-height: 30px;
+  top: 18px;
+  width: 334px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblDayTasksSummaryActivity{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  margin-right: 26px;
+  text-align: left;
+  top: 14px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-cboDayTasksSummaryWorkOrders{
+  border-width: 5px 18px 5px 5px;
+  height: 40px;
+  left: 10px;
+  line-height: 30px;
+  margin-right: 26px;
+  top: 9px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblDayTasksSummaryWorkOrder{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  margin-right: 26px;
+  text-align: left;
+  top: 5px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageDayTasksSummary-box{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageDayTasksSummary{
+  height: 100.0%;
+  left: 0px;
+  top: 0px;
+  width: 100.0%;
+}
+
+#m1-RenelcoBMA_TimeClock-imgPictureViewer{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  top: 0px;
+  width: 360px;
+}
+
+#m1-RenelcoBMA_TimeClock-pagePictureViewer-box{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pagePictureViewer{
+  height: 100.0%;
+  left: 0px;
+  top: 0px;
+  width: 100.0%;
+}
+
+#m1-RenelcoBMA_TimeClock-map1{
+  border-top-color: transparent;
+  border-width: 1px 0px 0px 0px;
+  height: 520px;
+  left: 0px;
+  line-height: 40px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-map1outer{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageGoogleMap-box{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageGoogleMap{
+  height: 100.0%;
+  left: 0px;
+  top: 0px;
+  width: 100.0%;
+}
+
+#m1-RenelcoBMA_TimeClock-imgAddWorkOrderMaterial{
+  height: 56px;
+  left: 287px;
+  line-height: 56px;
+  top: -107px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imWorkOrderMaterialPhoto{
+  height: 56px;
+  left: 107px;
+  line-height: 56px;
+  top: -51px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgWorkOrderMaterialSound{
+  height: 56px;
+  left: 17px;
+  line-height: 56px;
+  top: 5px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelToolBarWorkOrderMaterials{
+  height: 66px;
+  left: 0px;
+  line-height: 66px;
+  margin-right: 0px;
+/*  top: 0px; 	top replaced by bottom */
+  bottom: 0px !important;
+  width: auto;
+  z-index: 100 !important;
+}
+
+#m1-RenelcoBMA_TimeClock-txtWorkOrderMaterialsQuantityListItem{
+  height: 21px;
+  line-height: 15px;
+  margin-left: auto;
+  right: 23px;
+  text-align: right;
+  top: -3px;
+  width: 75px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtWorkOrderMaterialsListItem{
+  height: 15px;
+  left: 18px;
+  line-height: 15px;
+  text-align: left;
+  top: 12px;
+  width: 220px;
+}
+
+#m1-RenelcoBMA_TimeClock-lstWorkOrderMaterialsListItem-inner-div{
+  height: 40px;
+  left: -10px;
+  line-height: 40px;
+  margin-right: -20px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lstWorkOrderMaterialsListItem{
+  height: 40px;
+  left: 9px;
+  line-height: 40px;
+  margin-right: 18px;
+  overflow: visible;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lstWorkOrderMaterials{
+  height: 40px;
+  left: 4px;
+  line-height: 40px;
+  margin-right: 16px;
+  top: 2px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelWorkOrderMaterialsList-scroller{
+  border-top-color: transparent;
+  border-width: 1px 0px 0px 0px;
+  height: 800px;
+  left: 0px;
+  line-height: 40px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelWorkOrderMaterialsList{
+  height: 420px;
+  left: 0px;
+  line-height: 420px;
+  margin-right: 0px;
+  top: 8px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblWorkOrderMaterialsList{
+  height: 24px;
+  left: 15px;
+  line-height: 24px;
+  text-align: left;
+  top: 5px;
+  width: 325px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelWorkOrderMaterials{
+  height: 452px;
+  left: 0px;
+  line-height: 452px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageWorkOrderMaterials-box{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageWorkOrderMaterials{
+  height: 100.0%;
+  left: 0px;
+  top: 0px;
+  width: 100.0%;
+}
+
+#m1-RenelcoBMA_TimeClock-imgWorkflowPictureAfter{
+  height: 56px;
+  left: 107px;
+  line-height: 56px;
+  top: -219px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgWorkflowNewTask{
+  height: 56px;
+  left: 287px;
+  line-height: 56px;
+  top: -163px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgWorkflowMetree{
+  height: 56px;
+  left: 197px;
+  line-height: 56px;
+  top: -107px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgWorkflowPictureBefore{
+  height: 56px;
+  left: 107px;
+  line-height: 56px;
+  top: -51px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgWorkflowSound{
+  height: 56px;
+  left: 17px;
+  line-height: 56px;
+  top: 5px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelToolBarWorkflowIntum{
+  height: 66px;
+  left: 0px;
+  line-height: 66px;
+  margin-right: 0px;
+/*  top: 0px; 	top replaced by bottom */
+  bottom: 0px !important;
+  width: auto;
+  z-index: 100 !important;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTasksSummaryInfo{
+  height: 21px;
+  left: 10px;
+  line-height: 21px;
+  text-align: left;
+  top: -264px;
+  width: 326px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgWorkflowPictureAfterStatus{
+  height: 25px;
+  left: 35px;
+  line-height: 25px;
+  top: 7px;
+  width: 25px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblWorkflowPictureAfter{
+  height: 38px;
+  left: 0px;
+  line-height: 19px;
+  text-align: center;
+  top: 5px;
+  white-space: pre-wrap;
+  width: 96px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelWorkflowPictureAfter{
+  height: 78px;
+  left: 231px;
+  line-height: 78px;
+  top: -156px;
+  width: 96px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgWorkflowMetreeStatus{
+  height: 25px;
+  left: 37px;
+  line-height: 25px;
+  top: -58px;
+  width: 25px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblWorkflowMetree{
+  height: 103px;
+  left: 0px;
+  line-height: 19px;
+  text-align: center;
+  top: 5px;
+  width: 100px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelWorkflowMetree{
+  height: 78px;
+  left: 118px;
+  line-height: 78px;
+  top: -78px;
+  width: 100px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgWorkflowPictureBeforeStatus{
+  height: 25px;
+  left: 37px;
+  line-height: 25px;
+  top: 20px;
+  width: 25px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblWorkflowPictureBefore{
+  height: 24px;
+  left: 0px;
+  line-height: 19px;
+  text-align: center;
+  top: 5px;
+  white-space: pre-wrap;
+  width: 100px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelWorkflowPictureBefore{
+  height: 78px;
+  left: 2px;
+  line-height: 78px;
+  top: 0px;
+  width: 100px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelWorkFlowStatus{
+  border-width: 1px 1px 1px 1px;
+  height: 80px;
+  left: 10px;
+  line-height: 78px;
+  margin-right: 30px;
+  top: -304px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTasksList{
+  height: 24px;
+  left: 10px;
+  line-height: 24px;
+  text-align: left;
+  top: -190px;
+  width: 326px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtExecutedTasksDurationListItem{
+  height: 15px;
+  line-height: 15px;
+  margin-left: auto;
+  right: 29px;
+  text-align: right;
+  top: -3px;
+  width: 65px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtExecutedTasksListItem{
+  height: 15px;
+  left: 18px;
+  line-height: 15px;
+  text-align: left;
+  top: 12px;
+  width: 240px;
+}
+
+#m1-RenelcoBMA_TimeClock-lstExecutedTasksListItem-inner-div{
+  height: 40px;
+  left: -10px;
+  line-height: 40px;
+  margin-right: -20px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lstExecutedTasksListItem{
+  height: 40px;
+  left: 9px;
+  line-height: 40px;
+  margin-right: 18px;
+  overflow: visible;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lstExecutedTasks{
+  height: 40px;
+  left: 0px;
+  line-height: 40px;
+  margin-right: 6px;
+  top: 2px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelTasksList-scroller{
+  border-top-color: transparent;
+  border-width: 1px 0px 0px 0px;
+  height: 320px;
+  left: 0px;
+  line-height: 40px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelTasksList{
+  height: 290px;
+  left: 0px;
+  line-height: 290px;
+  margin-right: 0px;
+  top: 164px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-paneWorkFlowIntum{
+  height: 454px;
+  left: 0px;
+  line-height: 454px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageWorkflowIntum-box{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageWorkflowIntum{
+  height: 100.0%;
+  left: 0px;
+  top: 0px;
+  width: 100.0%;
+}
+
+#m1-RenelcoBMA_TimeClock-imgTaskDetailsPictureAfter{
+/*	
+  height: 135px;
+  left: 5px;
+  line-height: 135px;
+  top: 23px;
+  width: 137px;
+*/
+  height: 80% !important;
+  left: 2.5% !important;
+  line-height: 135px;
+  top: 5.5% !important;
+  width: 95% !important;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskDetailsPictureAfter{
+  height: 19px;
+  left: 5px;
+  line-height: 19px;
+  text-align: center;
+  top: 5px;
+  width: 120px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelTaskDetailsPictureAfter{
+  border-width: 1px 1px 1px 1px;
+  height: 185px;
+  line-height: 183px;
+  margin-right: 0px;
+  margin-left: auto;
+  width: 49%;
+  float: right;
+}
+
+#m1-RenelcoBMA_TimeClock-imgTaskDetailsPictureBefore{
+/*
+  height: 135px;
+  left: 5px;
+  line-height: 135px;
+  top: 23px;
+  width: 137px;
+*/
+  height: 80% !important;
+  left: 2.5% !important;
+  line-height: 135px;
+  top: 5.5% !important;
+  width: 95% !important;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskDetailsPictureBefore{
+  height: 19px;
+  left: 5px;
+  line-height: 19px;
+  text-align: center;
+  top: 5px;
+  width: 120px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelTaskDetailsPictureBefore{
+  border-width: 1px 1px 1px 1px;
+  height: 185px;
+  line-height: 183px;
+  margin-left: 0px;
+  width: 49%;
+  float: left;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskDetailsProfondeur{
+  height: 21px !important;
+  line-height: 21px;
+  text-align: left;
+  top: auto !important;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskDetailsProfondeur{
+  height: 21px !important;
+  left: auto;
+  line-height: 21px;
+  text-align: left;
+  top: auto !important;
+  width: 75%;
+  float: left;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskDetailsHauteur{
+  height: 21px !important;
+  line-height: 21px;
+  text-align: left;
+  top: auto !important;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskDetailsHauteur{
+  height: 21px !important;
+  left: auto;
+  line-height: 21px;
+  text-align: left;
+  top: auto !important;
+  width: 75%;
+  float: left;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskDetailsLargeur{
+  height: 21px !important;
+  line-height: 21px;
+  text-align: left;
+/*  margin-top: inherit; */
+  top: auto !important;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskDetailsLargeur{
+  height: 21px !important;
+  left: auto;
+  line-height: 21px;
+  text-align: left;
+/*  margin-top: inherit; */
+  top: auto !important;
+  width: 75%;
+  float: left;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskDetailsTypeObturation {
+  height: 21px !important;
+  line-height: 21px;
+  text-align: left;
+  margin-top: inherit;
+  top: auto !important;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskDetailsTypeObturation{
+  height: 21px !important;
+  left: auto;
+  line-height: 21px;
+  text-align: left;
+  margin-top: inherit;
+  top: auto !important;
+  width: 75%;
+  float: left;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskDetailsComment{
+  height: 21px !important;
+  line-height: 21px;
+  text-align: left;
+  top: auto !important;
+  width: 55;
+  word-break: break-word;
+  overflow-x: hidden;	
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskDetailsComment{
+  height: 21px !important;
+  left: auto;
+  line-height: 21px;
+  text-align: left;
+  top: auto !important;
+  width: 45%;
+  float: left;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskDetailsPiece{
+  height: 21px !important;
+  line-height: 21px;
+  text-align: left;
+  top: auto !important;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskDetailsPiece{
+  height: 21px !important;
+  left: auto;
+  line-height: 21px;
+  text-align: left;
+  top: auto !important;
+  width: 45%;
+  float: left;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskDetailsEtage{
+  height: 21px !important;
+  line-height: 21px;
+  text-align: left;
+  top: auto !important;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskDetailsEtage{
+  height: 21px !important;
+  left: auto;
+  line-height: 21px;
+  text-align: left;
+  top: auto !important;
+  width: 45%;
+  float: left;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskDetailsBatiment{
+  height: 21px !important;
+  line-height: 21px;
+  text-align: left;
+  top: auto !important;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskDetailsBatiment{
+  height: 21px !important;
+  left: auto;
+  line-height: 21px;
+  text-align: left;
+  top: auto !important;
+  width: 45%;
+  float: left;
+}
+
+#m1-RenelcoBMA_TimeClock-panelTaskDetails{
+  border-width: 1px 1px 1px 1px;
+/*  height: 180px; */
+  height: 200px;
+  line-height: 198px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskDetailsTitle{
+  height: 32px;
+  left: 20px;
+  line-height: 32px;
+  margin-right: 48px;
+  text-align: center;
+  top: 10px;
+  width: auto;
+  font-size: 24px !important;
+  font-weight: bold;
+  color: rgba(115,115,115,255);
+}
+
+#m1-RenelcoBMA_TimeClock-panelWorkOrder{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top:	10px;
+  padding-left:	20px;
+  padding-right:20px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageTaskDetails-box{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageTaskDetails{
+  height: 100.0%;
+  left: 0px;
+  top: 0px;
+  width: 100.0%;
+}
+
+#m1-RenelcoBMA_TimeClock-imgCancelMetreeObturation{
+  height: 56px;
+  left: 17px;
+  line-height: 56px;
+  top: -51px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgSaveMetreeObturation{
+  height: 56px;
+  left: 289px;
+  line-height: 56px;
+  top: 5px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelToolBarMetreesObturation{
+  height: 66px;
+  left: 0px;
+  line-height: 66px;
+  margin-right: 0px;
+/*  top: -66px; 	top replaced by bottom */
+  bottom: 0px !important;
+  width: auto;
+  z-index: 100 !important;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskMetreeProfondeur{
+  height: 40px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: -57px;
+  width: 315px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskMetreeProfondeur{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: -58px;
+  width: 310px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskMetreeHauteurObturation{
+  height: 40px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: -61px;
+  width: 315px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskMetreeHauteurObturation{
+  height: 26px;
+  left: 20px;
+  line-height: 26px;
+  text-align: left;
+  top: -62px;
+  width: 300px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskMetreeHauteurObturationStar{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: -36px;
+  width: 10px;
+  color:red;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskMetreeLargeurObturation{
+  height: 40px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: -41px;
+  width: 315px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskMetreeLargeurObturation{
+  height: 26px;
+  left: 20px;
+  line-height: 26px;
+  text-align: left;
+  top: -42px;
+  width: 300px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskMetreeLargeurObturationStar{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: -16px;
+  width: 10px;
+  color:red;
+}
+
+#m1-RenelcoBMA_TimeClock-cboObturationTypes{
+  border-width: 5px 18px 5px 5px;
+  height: 40px;
+  left: 10px;
+  line-height: 30px;
+  margin-right: 23px;
+  top: -19px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskMetreeTypeObturation{
+  height: 26px;
+  left: 20px;
+  line-height: 26px;
+  text-align: left;
+  top: -22px;
+  width: 75px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskMetreeTypeObturationStar{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: 4px;
+  width: 10px;
+  color:red;
+}
+
+#m1-RenelcoBMA_TimeClock-panelMetreeData{
+  border-width: 1px 1px 1px 1px;
+  height: 300px;
+  left: 10px;
+  line-height: 298px;
+  margin-right: 22px;
+  top: 10px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelMetreeObturation-scroller{
+  border-top-color: transparent;
+  border-width: 1px 0px 0px 0px;
+/*  height: 610px; */
+  height: 540px;
+  left: 0px;
+  line-height: 40px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelMetreeObturation{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageMetreesObturation-box{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageMetreesObturation{
+  height: 100.0%;
+  left: 0px;
+  top: 0px;
+  width: 100.0%;
+}
+
+#m1-RenelcoBMA_TimeClock-imgCancelMetree{
+  height: 56px;
+  left: 17px;
+  line-height: 56px;
+  top: -107px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgNextMetree{
+  height: 56px;
+  left: 289px;
+  line-height: 56px;
+  top: -51px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgSaveMetree{
+  height: 56px;
+  left: 289px;
+  line-height: 56px;
+  top: 5px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelToolBarMetrees{
+  height: 66px;
+  left: 0px;
+  line-height: 66px;
+  margin-right: 0px;
+  top: -66px !important;
+  width: auto;
+  z-index: 100 !important;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskMetreeComment{
+  height: 125px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: -111px;
+  white-space: pre-wrap;
+  width: 93% !important; /* 315px */
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskMetreeComment{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: -112px;
+  width: 310px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskMetreePiece{
+  height: 40px;
+  line-height: 26px;
+  margin-left: auto;
+  right: 13px;
+  text-align: left;
+  top: -112px;
+  width: 150px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskMetreePiece{
+  height: 26px;
+  line-height: 26px;
+  margin-left: auto;
+  right: 13px;
+  text-align: left;
+  top: -111px;
+  width: 150px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskMetreeEtage{
+  height: 40px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: -46px;
+  width: 100px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskMetreeEtage{
+  height: 26px;
+  left: 20px;
+  line-height: 26px;
+  text-align: left;
+  top: -45px;
+  width: 100px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskMetreeEtageStar{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: -19px;
+  width: 10px;
+  color: red;
+}
+
+#m1-RenelcoBMA_TimeClock-txtTaskMetreeBatiment{
+  height: 40px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: -20px;
+  width: 93% !important; /*315px; */
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskMetreeBatiment{
+  height: 26px;
+  left: 20px;
+  line-height: 26px;
+  text-align: left;
+  top: -21px;
+  width: 300px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblTaskMetreeBatimentStar{
+  height: 26px;
+  left: 10px;
+  line-height: 26px;
+  text-align: left;
+  top: 5px;
+  width: 10px;
+  color:red;
+}
+
+#m1-RenelcoBMA_TimeClock-panelMetreeLocation{
+  border-width: 1px 1px 1px 1px;
+  height: 300px;
+  left: 10px;
+  line-height: 298px;
+  margin-right: 22px;
+  top: 10px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelMetree-scroller{
+  border-top-color: transparent;
+  border-width: 1px 0px 0px 0px;
+  height: 610px; 
+/*  height: 540px; */
+  left: 0px;
+  line-height: 40px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelMetree{
+  height: 100% !important;
+  left: 0px;
+  line-height: 454px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageMetrees-box{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageMetrees{
+  height: 100.0%;
+  left: 0px;
+  top: 0px;
+  width: 100.0%;
+}
+
+#m1-RenelcoBMA_TimeClock-imgStartActivity{
+  height: 56px;
+  left: 107px;
+  line-height: 56px;
+  top: -331px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgWorkOrderActivitySound{
+  height: 56px;
+  left: 17px;
+  line-height: 56px;
+  top: -275px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgWorkflow{
+  height: 56px;
+  left: 287px;
+  line-height: 56px;
+  top: -219px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgEndWorkOrder{
+  height: 56px;
+  left: 197px;
+  line-height: 56px;
+  top: -163px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgStopActivity{
+  height: 56px;
+  left: 197px;
+  line-height: 56px;
+  top: -107px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgPauseActivity{
+  height: 56px;
+  left: 107px;
+  line-height: 56px;
+  top: -51px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgContinueActivity{
+  height: 56px;
+  left: 107px;
+  line-height: 56px;
+  top: 5px;
+  width: 56px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelToolBarWorkOrderActivity{
+  height: 66px;
+  left: 0px;
+  line-height: 66px;
+  margin-right: 0px;
+/*  top: 0px; 	top replaced by bottom */
+  bottom: 0px !important;
+  width: auto;
+  z-index: 100 !important;
+}
+
+/* For Odyssey+ Tests ONLY */
+
+#m1-RenelcoBMA_TimeClock-imgDigitTimeClockSecondLow{
+  height: 40px;
+  line-height: 40px;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgDigitTimeClockSecondHigh{
+  height: 40px;
+  line-height: 40px;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgDigitTimeClockPoints2{
+  height: 40px;
+  line-height: 40px;
+  top: 0px;
+  left: 0px;
+  width: 15px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgDigitTimeClockMinuteLow{
+  height: 40px;
+  line-height: 40px;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgDigitTimeClockMinuteHigh{
+  height: 40px;
+  line-height: 40px;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgDigitTimeClockPoints1{
+  height: 40px;
+  line-height: 40px;
+  top: 0px;
+  left: 0px;
+  width: 15px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgDigitTimeClockHourLow{
+  height: 40px;
+  line-height: 40px;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgDigitTimeClockHourHigh{
+  height: 40px;
+  line-height: 40px;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelDisplayTimeClock{
+  height: 45px;
+  left: 0px !important;
+  line-height: 45px;
+  margin-left: 15% !important;
+  margin-right: 15% !important;
+/*  padding-left: .5%;*/
+/*  padding-right: .5%;*/
+  padding-top: 2px !important;
+  top: auto !important;
+  width: auto !important;
+}
+
+#m1-RenelcoBMA_TimeClock-txtCurrentStatus{
+  background-color: rgb(230,230,230);
+  height: 30px;
+  line-height: 24px;
+  text-align: center;
+  top: 0px;
+  left: auto !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100% !important;
+}
+
+#m1-RenelcoBMA_TimeClock-panelTimeClock{
+  border-width: 1px 1px 1px 1px;
+  height: 85px;
+  line-height: 83px;
+  margin-left: 10px;
+  margin-right: 10px;
+  top: 5px;
+  positin: relative;
+  display: block;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-imgGoogleMap{
+  height: 55px !important;
+  left: 0px;
+  line-height: 55px;
+  top: 45px !important;
+  width: 55px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtWorkOrderSiteInfoAddressCountry{
+  height: 3px;
+  left: 70px;
+  line-height: 20px;
+  text-align: left;
+  top: 73px;
+  width: auto;
+  padding-left: 5%;
+}
+
+#m1-RenelcoBMA_TimeClock-txtWorkOrderSiteInfoAddressCity{
+  height: 3px;
+  left: 70px;
+  line-height: 20px;
+  text-align: left;
+  top: 51px;
+  width: auto;
+  padding-left: 5%;
+}
+
+#m1-RenelcoBMA_TimeClock-txtWorkOrderSiteInfoAddressStreet{
+  height: 3px;
+  left: 70px;
+  line-height: 20px;
+  text-align: left;
+  top: 29px;
+  width: auto;
+  padding-left: 5%;
+}
+
+#m1-RenelcoBMA_TimeClock-lblWorkOrderSiteInfoAddress{
+  height: 19px;
+  left: 5px;
+  line-height: 20px;
+  text-align: left;
+  top: 48px;
+  width: 75px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtWorkOrderSiteInfoName{
+  height: 3px;
+  left: 70px;
+  line-height: 20px;
+  text-align: left;
+  top: 21px;
+  width: auto;
+  padding-left: 5%;
+}
+
+#m1-RenelcoBMA_TimeClock-lblWorkOrderSiteInfoName{
+  height: 3px;
+  left: 5px;
+  line-height: 20px;
+  text-align: left;
+  top: 24px;
+  width: 75px;
+}
+
+#m1-RenelcoBMA_TimeClock-txtWorkOrderSiteInfoCustomer{
+  height: 3px;
+  left: 70px;
+  line-height: 20px;
+  text-align: left;
+  top: 2px;
+  width: auto;
+  padding-left: 5%;
+}
+
+#m1-RenelcoBMA_TimeClock-lblWorkOrderSiteInfoCustomer{
+  height: 3px;
+  left: 5px;
+  line-height: 20px;
+  text-align: left;
+  top: 5px;
+  width: 75px;
+}
+
+#m1-RenelcoBMA_TimeClock-panelWorkOrderInfo{
+  border-width: 1px 1px 1px 1px;
+  height: 145px;
+  line-height: 140px;
+  top: 25px;
+  left: 0px !important;
+  position: absolute;
+  width: 100%;
+}
+
+#m1-RenelcoBMA_TimeClock-lblDetails{
+  height: 26px;
+  left: 0px !important;
+  line-height: 26px;
+/*  margin-right: 26px;*/
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelWorkOrderDetails{
+  position: relative;
+  display: flex;
+  top: 0px !important;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 175px;
+  width: auto;
+/*  border: 1px solid blue; */
+}
+
+#m1-RenelcoBMA_TimeClock-cboActivities{
+  border-width: 5px 18px 5px 5px;
+  height: 40px;
+  line-height: 30px;
+/*  margin-right: 26px;*/
+  top: 25px;
+  left: 0px !important;
+  position: absolute;
+  width: 100%;
+}
+
+#m1-RenelcoBMA_TimeClock-lblActivity{
+  height: 26px;
+  left: 0px !important;
+  line-height: 26px;
+/*  margin-right: 26px;*/
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelActivities{
+  position: relative;
+  display: flex;
+  top: 0px !important;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 65px;
+  width: auto;
+/*  border: 1px solid green; */
+}
+
+#m1-RenelcoBMA_TimeClock-cboWorkOrders{
+  border-width: 5px 18px 5px 5px;
+  height: 40px;
+  line-height: 30px;
+/*  margin-right: 26px;*/
+  top: 25px;
+  left: 0px !important;
+  position: absolute;
+  width: 100%;
+/*  max-width: 90%*/
+}
+
+#m1-RenelcoBMA_TimeClock-lblWorkOrder{
+  height: 26px;
+  left: 0px !important;
+  line-height: 26px;
+/*  margin-right: 26px; */
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-panelWorkOrders{
+  position: relative;
+  display: flex;
+  top: 0px !important;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 65px;
+  width: auto;
+/*  border: 1px solid red; */
+}
+
+#m1-RenelcoBMA_TimeClock-panelWorkOrderActivity{
+  height: 454px;
+  left: 0px;
+  line-height: 454px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageWorkOrderActivity-box{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageWorkOrderActivity{
+  height: 100.0%;
+  left: 0px;
+  top: 0px;
+  width: 100.0%;
+}
+
+
+#m1-RenelcoBMA_TimeClock-imgLogin1{
+  -webkit-border-image: url(images/btn_validation.png) 1 1 1 1 stretch stretch;
+  border-width: 1px 1px 1px 1px;
+  height: 150px;
+  left: 0px !important;
+  top: 0px !important;
+  width: 150px;
+}
+
+#m1-RenelcoBMA_TimeClock-Login{
+  height: 150px !important;
+  margin: auto;
+  width: 150px !important;
+/*  border: 1px solid blue;*/
+}
+
+#m1-RenelcoBMA_TimeClock-txtLoginPassword{
+  height: 50px !important;
+  left: 0px !important;
+  line-height: 26px;
+  text-align: left;
+  top: 5px !important;
+  margin: auto;
+  width: 90% !important;
+}
+
+#m1-RenelcoBMA_TimeClock-lblLoginPassword{
+  height: 26px !important;
+  left: 0px !important;
+  line-height: 26px;
+  text-align: left;
+  top: 5px !important;
+  margin: auto;
+  width: 90% !important;
+}
+
+#m1-RenelcoBMA_TimeClock-LoginPassword{
+  height: 100px !important;
+  width: auto;
+  margin-top: 0% !important;
+  margin-bottom: 5% /*25px */;
+/*  border: 1px solid green; */
+}
+
+#m1-RenelcoBMA_TimeClock-txtLoginUsername{
+  height: 50px !important;
+  left: 0px !important;
+  line-height: 26px;
+  text-align: left;
+  top: 5px !important;
+  margin: auto;
+  width: 90% !important;
+}
+
+#m1-RenelcoBMA_TimeClock-lblLoginUsername{
+  height: 26px !important;
+  left: 0px !important;
+  line-height: 26px;
+  text-align: left;
+  top: 5px !important;
+  margin: auto;
+  width: 90% !important;
+}
+
+#m1-RenelcoBMA_TimeClock-LoginUsername{
+  height: 100px !important;
+  width: auto;
+  margin-top: 0% !important;
+/*  border: 1px solid red; */
+}
+
+#m1-RenelcoBMA_TimeClock-panelMainLogin{
+  border-width: 2px 2px 2px 2px;
+  height: 695px;
+  left: 0px;
+  line-height: 691px;
+  margin-right: 0px;
+  top: 0px;
+  padding: 10px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-tbLanguage m1-RenelcoBMA_TimeClock-imgLanguageFrench {
+  vertical-align: top;
+  height: 50% !important; /*26px; */
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 10% !important; /*50px; */
+}
+
+#m1-RenelcoBMA_TimeClock-tbLanguage m1-RenelcoBMA_TimeClock-imgLanguageGerman {
+  vertical-align: top;
+  height: 50% !important; /*26px; */
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 10% !important; /*50px; */
+}
+
+#m1-RenelcoBMA_TimeClock-tbLanguage m1-RenelcoBMA_TimeClock-imgLanguageItalian {
+  vertical-align: top;
+  height: 50% !important; /*26px; */
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 10% !important; /*50px; */
+}
+
+#m1-RenelcoBMA_TimeClock-tbLanguage m1-RenelcoBMA_TimeClock-imgLanguageEnglish {
+  vertical-align: top;
+  height: 50% !important; /*26px; */
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 10% !important; /*50px; */
+}
+
+#m1-RenelcoBMA_TimeClock-tbLanguage m1-RenelcoBMA_TimeClock-imgLanguagePortuguese {
+  vertical-align: top;
+  height: 50% !important; /*26px; */
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 10% !important; /*50px; */
+}
+
+#m1-RenelcoBMA_TimeClock-tbLanguage{
+  height: 7.5%; /*55px;*/
+  left: 0px;
+  line-height: 7.5%; /*55px;*/
+  margin: 0px auto 0px auto;
+  top: 0px !important;
+  width: auto;
+  visibility: visible;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
+
+#m1-RenelcoBMA_TimeClock-pageLogin-box{
+  height: 520px;
+  left: 0px;
+  line-height: 520px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-pageLogin{
+  height: 100.0%;
+  left: 0px;
+  top: 0px;
+  width: 100.0%;
+}
+
+#m1-RenelcoBMA_TimeClock-multiPage1{
+/*  height: 520px; */
+  height: auto;
+  left: 0px;
+/*  line-height: 520px; */
+  line-height: auto;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-cusExit{
+  -webkit-border-radius: 7px;
+  border-color: rgba(128,64,0,0);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  height: 32px;
+  line-height: 30px;
+  margin-left: auto;
+  right: 5px;
+  text-align: center;
+  top: -84px;
+  width: 50px;
+}
+
+#m1-RenelcoBMA_TimeClock-backButton{
+  border-width: 5px 5px 5px 13px;
+  height: 30px;
+  left: 50px;
+  line-height: 20px;
+  top: -54px;
+  width: 40px;
+}
+
+#m1-RenelcoBMA_TimeClock-imgMenu{
+  height: 32px;
+  left: 5px;
+  line-height: 32px;
+  top: -22px;
+  width: 40px;
+}
+
+#m1-RenelcoBMA_TimeClock-lblNavBar{
+  height: 26px;
+  left: 80px;
+  line-height: 26px;
+  margin-right: 160px;
+  text-align: center;
+  top: 6px;
+  width: auto;
+}
+
+#m1-RenelcoBMA_TimeClock-navBar{
+  height: 40px;
+  left: 0px;
+  line-height: 40px;
+  margin-right: 0px;
+  top: 0px;
+  width: auto;
+}
+

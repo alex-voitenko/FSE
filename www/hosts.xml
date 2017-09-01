@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hosts>
+	<host>
+		<host_id>1</host_id>
+		<host_name>Rds1 DEV/PROD</host_name>
+		<host_base_url>https://5.144.37.152</host_base_url>
+		<base_port>444</base_port>
+		<dss_port>447</dss_port>
+		<customer_name>Dev</customer_name>
+		<local_db>true</local_db>
+		<logfile>false</logfile>
+		<autosynchro>false</autosynchro>
+		<debug>false</debug>
+	</host>
+
+	<host>
+		<host_id>2</host_id>
+		<host_name>Rds2 DEV/TEST</host_name>
+		<host_base_url>https://5.144.37.152</host_base_url>
+		<base_port>544</base_port>
+		<dss_port>547</dss_port>
+		<customer_name>Dev</customer_name>
+		<local_db>true</local_db>
+		<logfile>false</logfile>
+		<autosynchro>false</autosynchro>
+		<debug>false</debug>
+	</host>
+
+	<host>
+		<host_id>3</host_id>
+		<host_name>Rds1 MILLIQUET/PROD</host_name>
+		<host_base_url>https://5.144.37.152</host_base_url>
+		<base_port>444</base_port>
+		<dss_port>447</dss_port>
+		<customer_name>milliquet</customer_name>
+		<local_db>true</local_db>
+		<logfile>false</logfile>
+		<autosynchro>false</autosynchro>
+		<debug>false</debug>
+	</host>
+
+	<host>
+		<host_id>4</host_id>
+		<host_name>Rds2 MILLIQUET/TEST</host_name>
+		<host_base_url>https://5.144.37.152</host_base_url>
+		<base_port>544</base_port>
+		<dss_port>547</dss_port>
+		<customer_name>milliquet</customer_name>
+		<local_db>true</local_db>
+		<logfile>false</logfile>
+		<autosynchro>false</autosynchro>
+		<debug>false</debug>
+	</host>
+
+	<host>
+		<host_id>5</host_id>
+		<host_name>Rds1 VONAUW/PROD</host_name>
+		<host_base_url>https://5.144.37.152</host_base_url>
+		<base_port>444</base_port>
+		<dss_port>447</dss_port>
+		<customer_name>vonauw</customer_name>
+		<local_db>true</local_db>
+		<logfile>false</logfile>
+		<autosynchro>false</autosynchro>
+		<debug>false</debug>
+	</host>
+
+	<host>
+		<host_id>6</host_id>
+		<host_name>Rds2 VONAUW/TEST</host_name>
+		<host_base_url>https://5.144.37.152</host_base_url>
+		<base_port>544</base_port>
+		<dss_port>547</dss_port>
+		<customer_name>vonauw</customer_name>
+		<local_db>true</local_db>
+		<logfile>false</logfile>
+		<autosynchro>false</autosynchro>
+		<debug>false</debug>
+	</host>
+	
+	<host>
+		<host_id>7</host_id>
+		<host_name>Rds1 MARMILLOD/PROD</host_name>
+		<host_base_url>https://5.144.37.152</host_base_url>
+		<base_port>444</base_port>
+		<dss_port>447</dss_port>
+		<customer_name>marmillod</customer_name>
+		<local_db>true</local_db>
+		<logfile>false</logfile>
+		<autosynchro>false</autosynchro>
+		<debug>false</debug>
+	</host>
+
+	<host>
+		<host_id>8</host_id>
+		<host_name>Rds2 MARMILLOD/TEST</host_name>
+		<host_base_url>https://5.144.37.152</host_base_url>
+		<base_port>544</base_port>
+		<dss_port>547</dss_port>
+		<customer_name>marmillod</customer_name>
+		<local_db>true</local_db>
+		<logfile>false</logfile>
+		<autosynchro>false</autosynchro>
+		<debug>false</debug>
+	</host>
+
+	<host>
+		<host_id>9</host_id>
+		<host_name>Rds1 PROPRENET/PROD</host_name>
+		<host_base_url>https://5.144.37.152</host_base_url>
+		<base_port>444</base_port>
+		<dss_port>447</dss_port>
+		<customer_name>proprenet</customer_name>
+		<local_db>true</local_db>
+		<logfile>false</logfile>
+		<autosynchro>false</autosynchro>
+		<debug>false</debug>
+	</host>
+	
+	<host>
+		<host_id>10</host_id>
+		<host_name>Rds2 PROPRENET/TEST</host_name>
+		<host_base_url>https://5.144.37.152</host_base_url>
+		<base_port>544</base_port>
+		<dss_port>547</dss_port>
+		<customer_name>proprenet</customer_name>
+		<local_db>true</local_db>
+		<logfile>false</logfile>
+		<autosynchro>false</autosynchro>
+		<debug>false</debug>
+	</host>
+
+	<!--
+	<host>
+		<host_id>9</host_id>
+		<host_name>Rds2 INTUM/TEST</host_name>
+		<host_base_url>https://5.144.37.152</host_base_url>
+		<base_port>544</base_port>
+		<dss_port>547</dss_port>
+		<customer_name>intum_sa</customer_name>
+		<local_db>true</local_db>
+		<logfile>false</logfile>
+		<autosynchro>false</autosynchro>
+		<debug>false</debug>
+	</host>	
+
+	<host>
+		<host_id>10</host_id>
+		<host_name>Rds1 INTUM/PROD</host_name>
+		<host_base_url>https://5.144.37.152</host_base_url>
+		<base_port>444</base_port>
+		<dss_port>447</dss_port>
+		<customer_name>intum_sa</customer_name>
+		<local_db>true</local_db>
+		<logfile>false</logfile>
+		<autosynchro>false</autosynchro>
+		<debug>false</debug>
+	</host>
+	-->
+</hosts>

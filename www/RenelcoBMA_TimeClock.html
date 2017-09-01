@@ -1,0 +1,822 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>RenelcoBMA_TimeClock</title>
+    <meta name="generator" content=
+      "MobiOne Studio - Design Center (2.6.2.201403191812), http://genuitec.com/mobile"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content=
+      " initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="RenelcoBMA_TimeClock.css"/>
+    <link rel="stylesheet" href="res/R_spinningwheel.css"/>
+    
+    <!-- Debugging Tool - ONLY FOR TEST - should be commented in production version --> 
+    <!-- script type="text/javascript" src="debuggap.js"></script -->
+   
+    <script class="m1-maps-api-script" type="text/javascript" src=
+      "http://maps.googleapis.com/maps/api/js?key=AIzaSyDfeggn0Em-VOJMazTpNMq6Xrh7UVAYCJ8"
+      ></script>
+	
+	<!-- 
+ 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20&key=AIzaSyAiWsOnG-AKWdyr3lwW1X2Y8QDhPETXC9I&libraries=drawing"></script>
+    -->    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="rte/rte.js"></script>
+    <script type="text/javascript" src="res/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="res/iscroll.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_TimeClock.js"></script>
+    <script type="text/javascript" src="res/R_phoneui.js"></script>
+    <script type="text/javascript" src="res/phoneui-map.js"></script>
+    <script type="text/javascript" src="res/R_spinningwheel.js"></script>
+    <script type="text/javascript" src="res/sprintf.min.js"></script>
+    
+    <!-- Wiener script for debugging - ONLY FOR TEST - should not be uncommented in current version -->
+    <!-- Too fuzzy to be used - replaced by debuggap 2016-03-04 -->
+    <!-- script src="http://192.168.1.2:8080/target/target-script-min.js#anonymous"></script -->
+    
+    <script type="text/javascript" src="Renelco_LogFile.js"></script>
+    
+    <script type="text/javascript" src="RenelcoBMA_languages.js"></script>
+    
+    <script type="text/javascript" src="Renelco_Cordova_PhoneGapUtilities.js"></script>
+    <script type="text/javascript" src="Renelco_Cordova_Package.js"></script>
+    <script type="text/javascript" src="Renelco_AppConfig.js"></script>
+    <script type="text/javascript" src="Renelco_Cordova_Backup.js"></script>
+    <script type="text/javascript" src="Renelco_MiscUtilities.js"></script>
+    <script type="text/javascript" src="Renelco_Cordova_FileSystem.js"></script>
+    <script type="text/javascript" src="Renelco_Cordova_GPS.js"></script>
+    <script type="text/javascript" src="Renelco_Cordova_GMap2.js"></script>
+    <script type="text/javascript" src="Renelco_Cordova_Camera.js"></script>
+    
+    <script type="text/javascript" src="Renelco_TimeClock.js"></script>
+    <script type="text/javascript" src="DisplayCustom.js"></script>
+    
+    <script type="text/javascript" src="WorkStateManager.js"></script>
+    
+    <script type="text/javascript" src="RenelcoBMA_activity.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_address.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_collaborator2.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_collaborator_activity.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_collaborator_type.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_contact.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_customer.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_gender.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_login.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_material.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_metree_Intum2.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_obturation_type_Intum.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_metree_obturation_type.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_document2.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_document_type.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_metree_document_type_Intum.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_metree_document_Intum.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_workflow_Intum.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_site.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_task.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_workorder.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_workorder_collaborator.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_workorder_info.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_workorder_material.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_workorder_status.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_workstamp.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_workstamp_type.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_DBManager2.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_TimeClock_system.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_TimeClock_business.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_TimeClock_Intum.js"></script>
+    <script type="text/javascript" src="RenelcoBMA_TimeClock_custom.js"></script>
+    
+  </head>
+  <body>
+    <div class="m1-top-root">
+      <!-- Loading spinner  -->
+      <div class="m1-loading">
+        <div>
+          <canvas class="m1-loading-spinner" width="25" height="25"></canvas>
+          <span class="m1-loading-text"></span>
+        </div>
+      </div>
+      <!-- Prompt to be shown for adding page on homescreen  -->
+      <canvas class="m1-homescreen-prompt" width="250" height="120"></canvas>
+      <!-- ***** RenelcoBMA_TimeClock *****  -->
+      <div id="m1-RenelcoBMA_TimeClock" class="m1-root m1-background-1">
+        <div id="m1-RenelcoBMA_TimeClock-navBar" class="m1-navbar m1-background-1">
+          <div id="m1-RenelcoBMA_TimeClock-lblNavBar" class="m1-text m1-font-1">Field Services</div>
+          <img id="m1-RenelcoBMA_TimeClock-imgMenu" class="m1-clickable m1-image" src=
+            "images/btn_menu.png" data-action-click-id="action72"/>
+          <!-- div id="m1-RenelcoBMA_TimeClock-backButton" 
+            class="m1-clickable m1-button m1-font-2 m1-shadow-1 m1-btn-1 m1-btn-2" name="backButton"
+            data-action-click-id="action42">Back</div -->
+          <div id="m1-RenelcoBMA_TimeClock-cusExit" 
+            class="m1-clickable m1-button m1-font-2 m1-background-2 m1-background-3 m1-active-color-1"
+            name="cusExit" data-action-click-id="action0">Exit</div>
+        </div>
+        <!-- MultiPage BEGIN -->
+        <div id="m1-RenelcoBMA_TimeClock-multiPage1" class="m1-multipanel">
+          <!-- Page Login -->
+          <div id="m1-RenelcoBMA_TimeClock-pageLogin" class="m1-selected m1-multipanel-page">
+            <div id="m1-RenelcoBMA_TimeClock-pageLogin-box" 
+              class="m1-iscroll-wrapper m1-border-1 m1-background-4">
+              <div id="m1-RenelcoBMA_TimeClock-tbLanguage" class="m1-toolbar m1-background-6">
+                <img id="m1-RenelcoBMA_TimeClock-imgLanguagePortuguese" class="m1-clickable m1-image" 
+                  src="images/Flags_Portugal.png"data-action-click-id="action94"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgLanguageEnglish" class="m1-clickable m1-image" 
+                  src="images/Flags_English.png"data-action-click-id="action93"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgLanguageItalian" class="m1-clickable m1-image" 
+                  src="images/Flags_Italy.png"data-action-click-id="action92"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgLanguageGerman" class="m1-clickable m1-image" 
+                  src="images/Flags_Germany.png" data-action-click-id="action91"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgLanguageFrench" class="m1-clickable m1-image" 
+                  src="images/Flags_France.png" data-action-click-id="action90"/>
+              </div>
+              <div id="m1-RenelcoBMA_TimeClock-panelMainLogin" 
+                class="m1-iscroll-wrapper m1-border-2 m1-background-5">
+                <div id="m1-RenelcoBMA_TimeClock-LoginUsername">
+	                <div id="m1-RenelcoBMA_TimeClock-lblLoginUsername" class="m1-text m1-font-6" 
+    	            	 data-lang="Username">Username</div>
+	                <input id="m1-RenelcoBMA_TimeClock-txtLoginUsername" 
+	                  class="m1-textfield m1-textfield-border m1-font-5" value="" type="text" name=
+	                  "txtLoginUsername" placeholder="Username" />
+	            </div>
+                <div id="m1-RenelcoBMA_TimeClock-LoginPassword">
+	                <div id="m1-RenelcoBMA_TimeClock-lblLoginPassword" class="m1-text m1-font-6"
+	                     data-lang="Password">Password</div>
+	                <input id="m1-RenelcoBMA_TimeClock-txtLoginPassword" 
+	                  class="m1-textfield m1-textfield-border m1-font-4" value="" type="password" name=
+	                  "txtLoginPassword" placeholder="Password"/>
+	            </div>
+	            <div id="m1-RenelcoBMA_TimeClock-Login">
+	                <div id="m1-RenelcoBMA_TimeClock-imgLogin1" 
+	                  class="m1-clickable m1-button m1-font-3 m1-shadow-1" name="imgLogin" 
+	                  data-action-click-id="action47"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Page WorkOrderActivity -->
+          <div id="m1-RenelcoBMA_TimeClock-pageWorkOrderActivity" class="m1-multipanel-page">
+            <div id="m1-RenelcoBMA_TimeClock-pageWorkOrderActivity-box" class="m1-iscroll-wrapper m1-border-1 m1-background-4">
+              <div id="m1-RenelcoBMA_TimeClock-panelWorkOrderActivity" class="m1-iscroll-wrapper m1-border-1 m1-background-5">
+              
+              	<div id="m1-RenelcoBMA_TimeClock-panelWorkOrders" >
+                  <div id="m1-RenelcoBMA_TimeClock-lblWorkOrder" class="m1-text m1-font-6"
+                       data-lang="Current WorkOrder">Current WorkOrder</div>
+                  <div id="m1-RenelcoBMA_TimeClock-cboWorkOrders" 
+                       class="m1-select-list-menu-spinner m1-soft-spinner m1-iscroll-no-prevent-default m1-combobox m1-font-5 m1-btn-3 m1-btn-4"
+                       name="cboWorkOrders" data-hiddenInputId=
+                       "m1-RenelcoBMA_TimeClock-hidden-select-cboWorkOrders" data-selectionInfoId="m1-RenelcoBMA_TimeClock-cboWorkOrders" 
+                       data-multiple="false" data-verbose-items-info="true" onClick="Beep();">
+                  </div>
+                </div>
+              	<div id="m1-RenelcoBMA_TimeClock-panelActivities" >
+                  <div id="m1-RenelcoBMA_TimeClock-lblActivity" class="m1-text m1-font-6"
+	                   data-lang="Activity">Activity</div>
+	              <div id="m1-RenelcoBMA_TimeClock-cboActivities" 
+	                   class="m1-select-list-menu-spinner m1-soft-spinner m1-iscroll-no-prevent-default m1-combobox m1-font-5 m1-btn-3 m1-btn-4"
+	                   name="cboActivities" data-hiddenInputId=
+	                   "m1-RenelcoBMA_TimeClock-hidden-select-cboActivities" data-selectionInfoId="m1-RenelcoBMA_TimeClock-cboActivities" 
+	                   data-multiple="false" data-verbose-items-info="true" onClick="Beep();">
+	              </div>
+                </div>
+                <div id="m1-RenelcoBMA_TimeClock-panelWorkOrderDetails">
+                    <div id="m1-RenelcoBMA_TimeClock-lblDetails" class="m1-text m1-font-6"
+                      data-lang="Details">Details</div>
+                    <div id="m1-RenelcoBMA_TimeClock-panelWorkOrderInfo" 
+                      class="m1-iscroll-wrapper m1-background-6 m1-border-3">
+                      <div id="m1-RenelcoBMA_TimeClock-lblWorkOrderSiteInfoCustomer" 
+                        class="m1-text m1-font-8" data-lang="Customer">Customer</div>
+                      <div id="m1-RenelcoBMA_TimeClock-txtWorkOrderSiteInfoCustomer" 
+                        class="m1-text m1-font-9">. . .</div>
+                      <div id="m1-RenelcoBMA_TimeClock-lblWorkOrderSiteInfoName" 
+                        class="m1-text m1-font-8" data-lang="Site">Site</div>
+                      <div id="m1-RenelcoBMA_TimeClock-txtWorkOrderSiteInfoName" 
+                        class="m1-text m1-font-9">. . .</div>
+                      <div id="m1-RenelcoBMA_TimeClock-lblWorkOrderSiteInfoAddress" 
+                        class="m1-text m1-font-8" data-lang="Address">Address</div>
+                      <div id="m1-RenelcoBMA_TimeClock-txtWorkOrderSiteInfoAddressStreet" 
+                        class="m1-text m1-font-9">. . .</div>
+                      <div id="m1-RenelcoBMA_TimeClock-txtWorkOrderSiteInfoAddressCity" 
+                        class="m1-text m1-font-9">. . .</div>
+                      <div id="m1-RenelcoBMA_TimeClock-txtWorkOrderSiteInfoAddressCountry" 
+                        class="m1-text m1-font-9">. . .</div>
+                      <img id="m1-RenelcoBMA_TimeClock-imgGoogleMap" class="m1-clickable m1-image" src=
+                        "images/btn_googlemaps.png" data-action-click-id="action9"/>
+                    </div>
+                </div>
+                <div id="m1-RenelcoBMA_TimeClock-panelTimeClock" 
+                  class="m1-iscroll-wrapper m1-background-6 m1-border-3">
+                  <input id="m1-RenelcoBMA_TimeClock-txtCurrentStatus" 
+                     class="m1-textfield m1-font-7" value="Idle" type="text" 
+                     readonly="" name="txtCurrentStatus"/>
+                  <div id="m1-RenelcoBMA_TimeClock-panelDisplayTimeClock" 
+                    class="m1-border-4 m1-background-7">
+                    <img id="m1-RenelcoBMA_TimeClock-imgDigitTimeClockHourHigh" 
+                      class="m1-image" src="images/BoldOrangeDigit_0.png"/>
+                    <img id="m1-RenelcoBMA_TimeClock-imgDigitTimeClockHourLow" 
+                      class="m1-image" src="images/BoldOrangeDigit_0.png"/>
+                    <img id="m1-RenelcoBMA_TimeClock-imgDigitTimeClockPoints1" 
+                      class="m1-image" src="images/BoldOrangeDigit_2Points.png"/>
+                    <img id="m1-RenelcoBMA_TimeClock-imgDigitTimeClockMinuteHigh" 
+                      class="m1-clickable m1-image" src="images/BoldOrangeDigit_0.png"/>
+                    <img id="m1-RenelcoBMA_TimeClock-imgDigitTimeClockMinuteLow" 
+                      class="m1-clickable m1-image" src="images/BoldOrangeDigit_0.png"/>
+                    <img id="m1-RenelcoBMA_TimeClock-imgDigitTimeClockPoints2" 
+                      class="m1-clickable m1-image" src="images/BoldOrangeDigit_2Points.png"/>
+                    <img id="m1-RenelcoBMA_TimeClock-imgDigitTimeClockSecondHigh" 
+                      class="m1-clickable m1-image" src="images/BoldOrangeDigit_0.png"/>
+                    <img id="m1-RenelcoBMA_TimeClock-imgDigitTimeClockSecondLow" 
+                      class="m1-clickable m1-image" src="images/BoldOrangeDigit_0.png"/>
+                  </div>
+                </div>
+              </div>
+              <div id="m1-RenelcoBMA_TimeClock-panelToolBarWorkOrderActivity" 
+                class="m1-iscroll-wrapper m1-background-1 m1-border-5">
+                <img id="m1-RenelcoBMA_TimeClock-imgContinueActivity" class="m1-clickable m1-image" 
+                  src="images/btn_marche.png" data-action-click-id="action59"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgPauseActivity" class="m1-clickable m1-image" src
+                  ="images/btn_pause.png" data-action-click-id="action28"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgStopActivity" class="m1-clickable m1-image" src=
+                  "images/btn_arret.png" data-action-click-id="action29"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgEndWorkOrder" class="m1-clickable m1-image" src=
+                  "images/btn_arret.png" data-action-click-id="action26"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgWorkflow" class="m1-clickable m1-image" src=
+                  "images/btn_task.png" data-action-click-id="action52"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgWorkOrderActivitySound" 
+                  class="m1-clickable m1-image" src="images/btn_sound.png"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgStartActivity" class="m1-clickable m1-image" src
+                  ="images/btn_marche.png" data-action-click-id="action27"/>
+              </div>
+            </div>
+          </div>
+          <!-- Page Metrees -->
+          <div id="m1-RenelcoBMA_TimeClock-pageMetrees" class="m1-multipanel-page">
+            <div id="m1-RenelcoBMA_TimeClock-pageMetrees-box" 
+              class="m1-iscroll-wrapper m1-border-1 m1-background-4">
+              <div id="m1-RenelcoBMA_TimeClock-panelMetree" 
+                class="m1-iscroll-wrapper m1-background-5 m1-border-5">
+                <div id="m1-RenelcoBMA_TimeClock-panelMetree-scroller" class="m1-iscroll-scroller" 
+                  data-bounce="false">
+                  <div id="m1-RenelcoBMA_TimeClock-panelMetreeLocation" 
+                    class="m1-iscroll-wrapper m1-background-6 m1-border-3">
+                    <div id="m1-RenelcoBMA_TimeClock-lblTaskMetreeBatimentStar" 
+                      class="m1-text m1-font-11">*</div>
+                    <div id="m1-RenelcoBMA_TimeClock-lblTaskMetreeBatiment" 
+                      class="m1-text m1-font-6" data-lang="Building">Building</div>
+                    <input id="m1-RenelcoBMA_TimeClock-txtTaskMetreeBatiment" 
+                      class="m1-textfield /*m1-textfield-border*/ m1-font-6" value="" type="text" name=
+                      "txtTaskMetreeBatiment" placeholder="Building Name"/>
+                    <div id="m1-RenelcoBMA_TimeClock-lblTaskMetreeEtageStar" 
+                      class="m1-text m1-font-11">*</div>
+                    <div id="m1-RenelcoBMA_TimeClock-lblTaskMetreeEtage" class="m1-text m1-font-6"
+                       data-lang="Floor">Floor</div>
+                    <input id="m1-RenelcoBMA_TimeClock-txtTaskMetreeEtage" 
+                      class="m1-textfield /*m1-textfield-border*/ m1-font-6" value="" type="number" name
+                      ="txtTaskMetreeEtage" placeholder="Floor"/>
+                    <div id="m1-RenelcoBMA_TimeClock-lblTaskMetreePiece" class="m1-text m1-font-6"
+                       data-lang="Room">Room</div>
+                    <input id="m1-RenelcoBMA_TimeClock-txtTaskMetreePiece" 
+                      class="m1-textfield /*m1-textfield-border*/ m1-font-6" value="" type="text" name=
+                      "txtTaskMetreePiece" placeholder="Room"/>
+                    <div id="m1-RenelcoBMA_TimeClock-lblTaskMetreeComment" class="m1-text m1-font-6"
+                      data-lang="Comment">Comment</div>
+                    <textarea id="m1-RenelcoBMA_TimeClock-txtTaskMetreeComment" 
+                      class="m1-textarea m1-textfield /*m1-textfield-border*/ m1-iscroll-no-prevent-default m1-font-6"
+                      name="txtTaskMetreeComment" wrap="soft" placeholder="Add your comment here..."
+                      ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div id="m1-RenelcoBMA_TimeClock-panelToolBarMetrees" 
+                class="m1-iscroll-wrapper m1-background-1 m1-border-5">
+                <img id="m1-RenelcoBMA_TimeClock-imgSaveMetree" class="m1-clickable m1-image" src=
+                  "images/btn_save.png" data-action-click-id="action50"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgNextMetree" class="m1-clickable m1-image" src=
+                  "images/btn_marche.png" data-action-click-id="action84"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgCancelMetree" class="m1-clickable m1-image" src=
+                  "images/btn_cancel.png" data-action-click-id="action61"/>
+              </div>
+            </div>
+          </div>
+          <!-- Page MetreesObturation -->
+          <div id="m1-RenelcoBMA_TimeClock-pageMetreesObturation" class="m1-multipanel-page">
+            <div id="m1-RenelcoBMA_TimeClock-pageMetreesObturation-box" 
+              class="m1-iscroll-wrapper m1-border-1 m1-background-4">
+              <div id="m1-RenelcoBMA_TimeClock-panelMetreeObturation" 
+                class="m1-iscroll-wrapper m1-background-5 m1-border-5">
+                <div id="m1-RenelcoBMA_TimeClock-panelMetreeObturation-scroller" 
+                  class="m1-iscroll-scroller" data-bounce="false">
+                  <div id="m1-RenelcoBMA_TimeClock-panelMetreeData" 
+                    class="m1-iscroll-wrapper m1-background-6 m1-border-3">
+                    <div id="m1-RenelcoBMA_TimeClock-lblTaskMetreeTypeObturationStar" 
+                      class="m1-text m1-font-10">*</div>
+                    <div id="m1-RenelcoBMA_TimeClock-lblTaskMetreeTypeObturation" 
+                      class="m1-text m1-font-6" data-lang="Type">Type</div>
+                    <div id="m1-RenelcoBMA_TimeClock-cboObturationTypes" 
+                      class="m1-select-list-menu-spinner m1-soft-spinner m1-iscroll-no-prevent-default m1-combobox m1-font-5 m1-btn-5 m1-btn-6"
+                      name="cboObturationTypes" data-hiddenInputId=
+                      "m1-RenelcoBMA_TimeClock-hidden-select-cboObturationTypes" 
+                      data-selectionInfoId="m1-RenelcoBMA_TimeClock-cboObturationTypes" 
+                      data-multiple="true" data-verbose-items-info="true"></div>
+                    <div id="m1-RenelcoBMA_TimeClock-lblTaskMetreeLargeurObturationStar" 
+                      class="m1-text m1-font-10">*</div>
+                    <div id="m1-RenelcoBMA_TimeClock-lblTaskMetreeLargeurObturation" 
+                      class="m1-text m1-font-6" data-lang="Shutter Width [cm]">Shutter Width [cm]</div>
+                    <input id="m1-RenelcoBMA_TimeClock-txtTaskMetreeLargeurObturation" 
+                      class="m1-textfield m1-font-6" value="" type="number" name=
+                      "txtTaskMetreeLargeurObturation" placeholder="Shutter Width"/>
+                    <div id="m1-RenelcoBMA_TimeClock-lblTaskMetreeHauteurObturationStar" 
+                      class="m1-text m1-font-10">*</div>
+                    <div id="m1-RenelcoBMA_TimeClock-lblTaskMetreeHauteurObturation" 
+                      class="m1-text m1-font-6" data-lang="Shutter Length [cm]">Shutter Length [cm]</div>
+                    <input id="m1-RenelcoBMA_TimeClock-txtTaskMetreeHauteurObturation" 
+                      class="m1-textfield m1-font-6" value="" type="number" name=
+                      "txtTaskMetreeHauteurObturation" placeholder="Shutter Length"/>
+                    <div id="m1-RenelcoBMA_TimeClock-lblTaskMetreeProfondeur" 
+                      class="m1-text m1-font-6" data-lang="Shutter Depth [cm]">Shutter Depth [cm]</div>
+                    <input id="m1-RenelcoBMA_TimeClock-txtTaskMetreeProfondeur" 
+                      class="m1-textfield m1-font-6" value="" type="number" name=
+                      "txtTaskMetreeProfondeur" placeholder="Shutter Depth"/>
+                  </div>
+                </div>
+              </div>
+              <div id="m1-RenelcoBMA_TimeClock-panelToolBarMetreesObturation" 
+                class="m1-iscroll-wrapper m1-background-1 m1-border-5">
+                <img id="m1-RenelcoBMA_TimeClock-imgSaveMetreeObturation" 
+                  class="m1-clickable m1-image" src="images/btn_save.png" data-action-click-id=
+                  "action86"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgCancelMetreeObturation" 
+                  class="m1-clickable m1-image" src="images/btn_cancel.png" data-action-click-id=
+                  "action87"/>
+              </div>
+            </div>
+          </div>
+          <!-- Page TaskDetails -->
+          <div id="m1-RenelcoBMA_TimeClock-pageTaskDetails" class="m1-multipanel-page">
+            <div id="m1-RenelcoBMA_TimeClock-pageTaskDetails-box" 
+              class="m1-iscroll-wrapper m1-border-1 m1-background-4">
+              <div id="m1-RenelcoBMA_TimeClock-panelWorkOrder" 
+                class="m1-iscroll-wrapper m1-border-1 m1-background-5">
+                <div id="m1-RenelcoBMA_TimeClock-lblTaskDetailsTitle" class="m1-text m1-font-11"
+                   data-lang="Task Details">Task Details</div>
+                <div id="m1-RenelcoBMA_TimeClock-panelTaskDetails" 
+                  class="m1-iscroll-wrapper m1-background-6 m1-border-3">
+                  <div id="m1-RenelcoBMA_TimeClock-lblTaskDetailsBatiment" class="m1-text m1-font-8"
+                     data-lang="Building">Building</div>
+                  <div id="m1-RenelcoBMA_TimeClock-txtTaskDetailsBatiment" class="m1-text m1-font-9"
+                  	>. . .</div>
+                  <div id="m1-RenelcoBMA_TimeClock-lblTaskDetailsEtage" class="m1-text m1-font-8"
+                     data-lang="Floor">Floor</div>
+                  <div id="m1-RenelcoBMA_TimeClock-txtTaskDetailsEtage" class="m1-text m1-font-9" 
+                  	>. . .</div>
+                  <div id="m1-RenelcoBMA_TimeClock-lblTaskDetailsPiece" class="m1-text m1-font-8"
+                     data-lang="Room">Room</div>
+                  <div id="m1-RenelcoBMA_TimeClock-txtTaskDetailsPiece" class="m1-text m1-font-9"
+					>. . .</div>
+                  <div id="m1-RenelcoBMA_TimeClock-lblTaskDetailsComment" class="m1-text m1-font-8" 
+                     data-lang="Comment">Comment</div>
+                  <div id="m1-RenelcoBMA_TimeClock-txtTaskDetailsComment" class="m1-text m1-font-9"
+                  	>. . .</div>
+                  	
+                  <div id="m1-RenelcoBMA_TimeClock-lblTaskDetailsTypeObturation" class="m1-text m1-font-8"
+                    data-lang="Obturation Type">Obturation Type</div>
+                  <div id="m1-RenelcoBMA_TimeClock-txtTaskDetailsTypeObturation" class="m1-text m1-font-9"
+                    data-lang="None">None</div>
+                  <div id="m1-RenelcoBMA_TimeClock-lblTaskDetailsLargeur" class="m1-text m1-font-8"
+                    data-lang="Shutter Width [cm]">Shutter Width [cm]</div>
+                  <div id="m1-RenelcoBMA_TimeClock-txtTaskDetailsLargeur" class="m1-text m1-font-9"
+                    >. . .</div>
+                  <div id="m1-RenelcoBMA_TimeClock-lblTaskDetailsHauteur" class="m1-text m1-font-8"
+                    data-lang="Shutter Length [cm]">Shutter Length [cm]</div>
+                  <div id="m1-RenelcoBMA_TimeClock-txtTaskDetailsHauteur" class="m1-text m1-font-9"
+                    >. . .</div>
+                  <div id="m1-RenelcoBMA_TimeClock-lblTaskDetailsProfondeur" class="m1-text m1-font-8"
+                    data-lang="Shutter Depth [cm]">Shutter Depth [cm]</div>
+                  <div id="m1-RenelcoBMA_TimeClock-txtTaskDetailsProfondeur" class="m1-text m1-font-9"
+                    >. . .</div>
+                </div>
+                <div id="m1-RenelcoBMA_TimeClock-panelTaskDetailsPictureBefore" 
+                  class="m1-iscroll-wrapper m1-background-6 m1-border-3">
+                  <div id="m1-RenelcoBMA_TimeClock-lblTaskDetailsPictureBefore" 
+                    class="m1-text m1-font-8" data-lang="Picture BEFORE">Picture BEFORE</div>
+                  <img id="m1-RenelcoBMA_TimeClock-imgTaskDetailsPictureBefore" 
+                    class="m1-clickable m1-image"/>
+                </div>
+                <div id="m1-RenelcoBMA_TimeClock-panelTaskDetailsPictureAfter" 
+                  class="m1-iscroll-wrapper m1-background-6 m1-border-3">
+                  <div id="m1-RenelcoBMA_TimeClock-lblTaskDetailsPictureAfter" 
+                    class="m1-text m1-font-8" data-lang="Picture AFTER">Picture AFTER</div>
+                  <img id="m1-RenelcoBMA_TimeClock-imgTaskDetailsPictureAfter" 
+                    class="m1-clickable m1-image" data-action-click-id="action66"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Page WorkflowIntum -->
+          <div id="m1-RenelcoBMA_TimeClock-pageWorkflowIntum" class="m1-multipanel-page">
+            <div id="m1-RenelcoBMA_TimeClock-pageWorkflowIntum-box" 
+              class="m1-iscroll-wrapper m1-border-1 m1-background-4">
+              <div id="m1-RenelcoBMA_TimeClock-paneWorkFlowIntum" 
+                class="m1-iscroll-wrapper m1-border-1 m1-background-5">
+                <div id="m1-RenelcoBMA_TimeClock-panelTasksList" 
+                  class="m1-iscroll-wrapper m1-border-1 m1-background-5">
+                  <div id="m1-RenelcoBMA_TimeClock-panelTasksList-scroller" 
+                    class="m1-iscroll-scroller" data-bounce="false">
+                    <ul id="m1-RenelcoBMA_TimeClock-lstExecutedTasks" 
+                      class="m1-rounded-list m1-list">
+                      <!--
+                      <li id="m1-RenelcoBMA_TimeClock-lstExecutedTasksListItem" 
+                        class="m1-first m1-last m1-clickable m1-highlight m1-background-8 m1-background-9 m1-background-10"
+                        data-action-click-id="action71">
+                        <div id="m1-RenelcoBMA_TimeClock-lstExecutedTasksListItem-inner-div">
+                          <div id="m1-RenelcoBMA_TimeClock-txtExecutedTasksListItem" 
+                            class="m1-text m1-font-12 m1-active-color-2">Item</div>
+                          <div id="m1-RenelcoBMA_TimeClock-txtExecutedTasksDurationListItem" 
+                            class="m1-text m1-font-12 m1-active-color-2">00:00:00</div>
+                        </div>
+                      </li>
+                      -->
+                    </ul>
+                  </div>
+                </div>
+                <div id="m1-RenelcoBMA_TimeClock-lblTasksList" class="m1-text m1-font-7 m1-shadow-2"
+                   data-lang="Achieved Tasks">Achieved Tasks</div>
+                <div id="m1-RenelcoBMA_TimeClock-panelWorkFlowStatus" 
+                  class="m1-iscroll-wrapper m1-background-6 m1-border-3">
+                  <div id="m1-RenelcoBMA_TimeClock-panelWorkflowPictureBefore" 
+                    class="m1-iscroll-wrapper m1-background-5 m1-border-7">
+                    <div id="m1-RenelcoBMA_TimeClock-lblWorkflowPictureBefore" 
+                      class="m1-text m1-font-8" data-lang="Picture BEFORE">Picture BEFORE</div>
+                    <img id="m1-RenelcoBMA_TimeClock-imgWorkflowPictureBeforeStatus" 
+                      class="m1-clickable m1-image" src="images/CheckMark48x48.png"/>
+                  </div>
+                  <div id="m1-RenelcoBMA_TimeClock-panelWorkflowMetree" 
+                    class="m1-iscroll-wrapper m1-background-5 m1-border-7">
+                    <div id="m1-RenelcoBMA_TimeClock-lblWorkflowMetree" class="m1-text m1-font-8"
+                       data-lang="Metrees">Metrees</div>
+                    <img id="m1-RenelcoBMA_TimeClock-imgWorkflowMetreeStatus" 
+                      class="m1-clickable m1-image" src="images/CheckMark48x48.png"/>
+                  </div>
+                  <div id="m1-RenelcoBMA_TimeClock-panelWorkflowPictureAfter" 
+                    class="m1-iscroll-wrapper m1-background-5 m1-border-7">
+                    <div id="m1-RenelcoBMA_TimeClock-lblWorkflowPictureAfter" 
+                      class="m1-text m1-font-8" data-lang="Picture AFTER">Picture AFTER</div>
+                    <img id="m1-RenelcoBMA_TimeClock-imgWorkflowPictureAfterStatus" 
+                      class="m1-clickable m1-image" src="images/CheckMark48x48.png"/>
+                  </div>
+                </div>
+                <div id="m1-RenelcoBMA_TimeClock-txtTasksSummaryInfo" class="m1-text m1-font-9"
+                  >Number: 000 - Working Time: 00:00:00</div>
+              </div>
+              <div id="m1-RenelcoBMA_TimeClock-panelToolBarWorkflowIntum" 
+                class="m1-iscroll-wrapper m1-background-1 m1-border-5">
+                <img id="m1-RenelcoBMA_TimeClock-imgWorkflowSound" class="m1-clickable m1-image" src
+                  ="images/btn_sound.png"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgWorkflowPictureBefore" 
+                  class="m1-clickable m1-image" src="images/btn_photo.png" data-action-click-id=
+                  "action31"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgWorkflowMetree" class="m1-clickable m1-image" 
+                  src="images/btn_metree.png" data-action-click-id="action33"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgWorkflowNewTask" class="m1-clickable m1-image" 
+                  src="images/btn_add.png" data-action-click-id="action49"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgWorkflowPictureAfter" 
+                  class="m1-clickable m1-image" src="images/btn_photo.png" data-action-click-id=
+                  "action32"/>
+              </div>
+            </div>
+          </div>
+          <!-- Page WorkOrderMaterials -->
+          <div id="m1-RenelcoBMA_TimeClock-pageWorkOrderMaterials" class="m1-multipanel-page">
+            <div id="m1-RenelcoBMA_TimeClock-pageWorkOrderMaterials-box" 
+              class="m1-iscroll-wrapper m1-border-1 m1-background-4">
+              <div id="m1-RenelcoBMA_TimeClock-panelWorkOrderMaterials" 
+                class="m1-iscroll-wrapper m1-border-1 m1-background-5">
+                <div id="m1-RenelcoBMA_TimeClock-lblWorkOrderMaterialsList" 
+                  class="m1-text m1-font-7 m1-shadow-2" data-lang="List of Material">List of Material</div>
+                <div id="m1-RenelcoBMA_TimeClock-panelWorkOrderMaterialsList" 
+                  class="m1-iscroll-wrapper m1-border-1 m1-background-5">
+                  <div id="m1-RenelcoBMA_TimeClock-panelWorkOrderMaterialsList-scroller" 
+                    class="m1-iscroll-scroller" data-bounce="false">
+                    <ul id="m1-RenelcoBMA_TimeClock-lstWorkOrderMaterials" 
+                      class="m1-rounded-list m1-list">
+                      <!--
+                      <li id="m1-RenelcoBMA_TimeClock-lstWorkOrderMaterialsListItem" 
+                        class="m1-first m1-last m1-clickable m1-background-8 m1-background-11 m1-background-12"
+                        >
+                        <div id="m1-RenelcoBMA_TimeClock-lstWorkOrderMaterialsListItem-inner-div">
+                          <div id="m1-RenelcoBMA_TimeClock-txtWorkOrderMaterialsListItem" 
+                            class="m1-text m1-font-12 m1-active-color-2">Item</div>
+                          <div id="m1-RenelcoBMA_TimeClock-txtWorkOrderMaterialsQuantityListItem" 
+                            class="m1-text m1-font-12 m1-active-color-2">Qty</div>
+                        </div>
+                      </li>
+                      -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="m1-RenelcoBMA_TimeClock-panelToolBarWorkOrderMaterials" 
+                class="m1-iscroll-wrapper m1-background-1 m1-border-5">
+                <img id="m1-RenelcoBMA_TimeClock-imgWorkOrderMaterialSound" 
+                  class="m1-clickable m1-image" src="images/btn_sound.png"/>
+                <img id="m1-RenelcoBMA_TimeClock-imWorkOrderMaterialPhoto" 
+                  class="m1-clickable m1-image" src="images/btn_photo.png"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgAddWorkOrderMaterial" 
+                  class="m1-clickable m1-image" src="images/btn_add.png" data-action-click-id=
+                  "action55"/>
+              </div>
+            </div>
+          </div>
+          <!-- Page GoogleMap -->
+         <div id="m1-RenelcoBMA_TimeClock-pageGoogleMap" class="m1-multipanel-page">
+            <div id="m1-RenelcoBMA_TimeClock-pageGoogleMap-box" 
+              class="m1-iscroll-wrapper m1-border-1 m1-background-4">
+              <div id="m1-RenelcoBMA_TimeClock-map1outer" class="m1-map-container">
+              	<!--
+                <div id="m1-RenelcoBMA_TimeClock-map1" class="m1-map" data-addr="Switzerland" 
+                	 data-show-pin="false" data-scale="15" data-map-type="Roadmap" data-show-pin="false" data-pin-title="" 
+                	 data-pin-url="http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" data-default-ui="false" data-pan-control=
+                "true" data-map-type-control="true" data-scale-control="true" 
+                data-street-view-control="true" data-overview-map-control="true"></div>
+                -->
+                <div id="m1-RenelcoBMA_TimeClock-map1" class="m1-map" 
+                      data-addr="Switzerland" data-show-pin="false" data-scale="15" data-map-type="Roadmap"
+                     data-default-ui="false"></div>
+              </div>
+            </div>
+          </div>
+          <div id="m1-RenelcoBMA_TimeClock-pagePictureViewer" class="m1-multipanel-page">
+            <div id="m1-RenelcoBMA_TimeClock-pagePictureViewer-box" 
+              class="m1-iscroll-wrapper m1-border-1 m1-background-4">
+              <img id="m1-RenelcoBMA_TimeClock-imgPictureViewer" class="m1-clickable m1-image"/>
+            </div>
+          </div>
+          <!-- Page DayTasksSummary -->
+          <div id="m1-RenelcoBMA_TimeClock-pageDayTasksSummary" class="m1-multipanel-page">
+            <div id="m1-RenelcoBMA_TimeClock-pageDayTasksSummary-box" 
+              class="m1-iscroll-wrapper m1-border-1 m1-background-4">
+              <div id="m1-RenelcoBMA_TimeClock-lblDayTasksSummaryWorkOrder" 
+                class="m1-text m1-font-6" data-lang="WorkOrder">WorkOrder</div>
+              <div id="m1-RenelcoBMA_TimeClock-cboDayTasksSummaryWorkOrders" 
+                class="m1-select-list-menu-spinner m1-soft-spinner m1-iscroll-no-prevent-default m1-combobox m1-font-5 m1-btn-3 m1-btn-4"
+                name="cboDayTasksSummaryWorkOrders" data-hiddenInputId=
+                "m1-RenelcoBMA_TimeClock-hidden-select-cboDayTasksSummaryWorkOrders" 
+                data-selectionInfoId="m1-RenelcoBMA_TimeClock-cboDayTasksSummaryWorkOrders" 
+                data-multiple="false" data-verbose-items-info="true" onClick="Beep();"></div>
+              <div id="m1-RenelcoBMA_TimeClock-lblDayTasksSummaryActivity" class="m1-text m1-font-6"
+                 data-lang="Activity">Activity</div>
+              <div id="m1-RenelcoBMA_TimeClock-cboDayTasksSummaryActivities" 
+                class="m1-select-list-menu-spinner m1-soft-spinner m1-iscroll-no-prevent-default m1-combobox m1-font-5 m1-btn-3 m1-btn-4"
+                name="cboDayTasksSummaryActivities" data-hiddenInputId=
+                "m1-RenelcoBMA_TimeClock-hidden-select-cboDayTasksSummaryActivities" 
+                data-selectionInfoId="m1-RenelcoBMA_TimeClock-cboDayTasksSummaryActivities" 
+                data-multiple="false" data-verbose-items-info="true" onClick="Beep();"></div>
+              <div id="m1-RenelcoBMA_TimeClock-lblDayTasksSummaryList" 
+                class="m1-text m1-font-7 m1-shadow-2" data-lang="Achieved Tasks">Achieved Tasks</div>
+              <div id="m1-RenelcoBMA_TimeClock-txtDayTasksSummaryInfo" class="m1-text m1-font-9"
+                >Number: 000 - Working Time: 00:00:00</div>
+              <div id="m1-RenelcoBMA_TimeClock-panelDayTasksSummaryList" 
+                class="m1-iscroll-wrapper m1-border-1 m1-background-5">
+                <div id="m1-RenelcoBMA_TimeClock-panelDayTasksSummaryList-scroller" 
+                  class="m1-iscroll-scroller" data-bounce="false">
+                  <ul id="m1-RenelcoBMA_TimeClock-lstDayTasksSummary" 
+                    class="m1-rounded-list m1-list">
+                    <!--
+                    <li id="m1-RenelcoBMA_TimeClock-lstDayTasksSummaryListItem" 
+                      class="m1-first m1-last m1-clickable m1-background-8 m1-background-13 m1-background-14"
+                      >
+                      <div id="m1-RenelcoBMA_TimeClock-lstDayTasksSummaryListItem-inner-div">
+                        <div id="m1-RenelcoBMA_TimeClock-txtDayTasksSummaryListItem" 
+                          class="m1-text m1-font-12 m1-active-color-2">Item</div>
+                        <div id="m1-RenelcoBMA_TimeClock-txtDayTasksSummaryDurationListItem" 
+                          class="m1-text m1-font-12 m1-active-color-2">00:00:00</div>
+                      </div>
+                    </li>
+                    -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Page WorkOrderMaterial -->
+          <div id="m1-RenelcoBMA_TimeClock-pageWorkOrderMaterial" class="m1-multipanel-page">
+            <div id="m1-RenelcoBMA_TimeClock-pageWorkOrderMaterial-box" 
+              class="m1-iscroll-wrapper m1-border-1 m1-background-4">
+              <div id="m1-RenelcoBMA_TimeClock-panelWorkOrderMaterial" 
+                class="m1-iscroll-wrapper m1-background-6 m1-border-3">
+                <div id="m1-RenelcoBMA_TimeClock-lblWorkOrderMaterialName" class="m1-text m1-font-6"
+                   data-lang="Part">Part</div>
+                <div id="m1-RenelcoBMA_TimeClock-cboWorkOrderMaterial" 
+                  class="m1-select-list-menu-spinner m1-soft-spinner m1-iscroll-no-prevent-default m1-combobox m1-font-4 m1-btn-7 m1-btn-8"
+                  name="cboWorkOrderMaterial" data-hiddenInputId=
+                  "m1-RenelcoBMA_TimeClock-hidden-select-cboWorkOrderMaterial" data-selectionInfoId=
+                  "m1-RenelcoBMA_TimeClock-cboWorkOrderMaterial" data-multiple="false" 
+                  data-verbose-items-info="true" onClick="Beep();"></div>
+                <div id="m1-RenelcoBMA_TimeClock-lblWorkOrderMaterialComment" 
+                  class="m1-text m1-font-6" data-lang="Comment">Comment</div>
+                <div id="m1-RenelcoBMA_TimeClock-txtWorkOrderMaterialFlagNew" 
+                  class="m1-text m1-font-13">0</div>
+                <input id="m1-RenelcoBMA_TimeClock-txtWorkOrderMaterialComment" 
+                  class="m1-textfield m1-font-14" value="" type="text" name=
+                  "txtWorkOrderMaterialComment" placeholder="Comment max 25 char."/>
+                <div id="m1-RenelcoBMA_TimeClock-lblWorkOrderMaterialQuantity" 
+                  class="m1-text m1-font-6" data-lang="Quantity">Quantity</div>
+                <input id="m1-RenelcoBMA_TimeClock-txtWorkOrderMaterialQuantity" 
+                  class="m1-textfield m1-font-4" value="" type="number" name=
+                  "txtWorkOrderMaterialQuantity"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgCancelWorkOrderMaterial" 
+                  class="m1-clickable m1-image" src="images/btn_cancel.png" data-action-click-id=
+                  "action53"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgDeleteWorkOrderMaterial" 
+                  class="m1-clickable m1-image" src="images/btn_supprimer.png" data-action-click-id=
+                  "action63"/>
+                <img id="m1-RenelcoBMA_TimeClock-imgSaveWorkOrderMaterial" 
+                  class="m1-clickable m1-image" src="images/btn_save.png" data-action-click-id=
+                  "action54"/>
+              </div>
+            </div>
+          </div>
+          <!-- Page Settings -->
+          <div id="m1-RenelcoBMA_TimeClock-pageSettings" class="m1-multipanel-page">
+            <div id="m1-RenelcoBMA_TimeClock-pageSettings-box" 
+              class="m1-iscroll-wrapper m1-border-1 m1-background-4">
+              <div id="m1-RenelcoBMA_TimeClock-panelSettings" 
+                class="m1-iscroll-wrapper m1-background-5 m1-border-5">
+                <div id="m1-RenelcoBMA_TimeClock-panelSettings-scroller" class="m1-iscroll-scroller"
+                  data-bounce="false">
+                  <div id="m1-RenelcoBMA_TimeClock-panelSettingsSystem" 
+                    class="m1-iscroll-wrapper m1-background-6 m1-border-3">
+                    <div id="m1-RenelcoBMA_TimeClock-lblSettingsHostUrlStar" 
+                      class="m1-text m1-font-11">*</div>
+                    <div id="m1-RenelcoBMA_TimeClock-lblSettingsHostUrl" class="m1-text m1-font-6"
+                      >Hosts</div>
+                    <div id="m1-RenelcoBMA_TimeClock-cboAppConfigs" 
+                  	  class="m1-select-list-menu-spinner m1-soft-spinner m1-iscroll-no-prevent-default m1-combobox m1-font-5 m1-btn-3 m1-btn-4" 
+                  	  name="cboAppConfigs" data-hiddenInputId="m1-RenelcoBMA_TimeClock-hidden-select-cboAppConfigs" 
+                  	  data-selectionInfoId="m1-RenelcoBMA_TimeClock-cboAppConfigs" 
+                  	  data-multiple="false" data-verbose-items-info="true" onClick="Beep(); enableLogFile(false); enableDebugMode(false);">
+                  	</div>
+                    <div id="m1-RenelcoBMA_TimeClock-lblSettingsCustomerNameStar" 
+                      class="m1-text m1-font-11">*</div>
+                    <div id="m1-RenelcoBMA_TimeClock-lblSettingsCustomerName" 
+                      class="m1-text m1-font-6">Customer Name</div>
+                    <input id="m1-RenelcoBMA_TimeClock-txtSettingsCustomerName" 
+                      class="m1-textfield m1-textfield-border m1-font-6" value="" type="text" name=
+                      "txtSettingsCustomerName" placeholder="Customer Name" readonly/>
+                    <div id="m1-RenelcoBMA_TimeClock-lblSettingsLogFile" class="m1-text m1-font-6"
+                      >LOG File</div>
+                    <div id="m1-RenelcoBMA_TimeClock-tgSettingsLogFile" class="m1-toggle5"
+                         data-action-change-id="action101">
+                      <div id="m1-comp">
+                        <input type="checkbox" name="tgSettingsLogFile"/>
+                      </div>
+                    </div>
+                    <div id="m1-RenelcoBMA_TimeClock-lblSettingsAUTOSynchro" class="m1-text m1-font-6"
+                      >AUTO Synchro (Server)</div>
+                    <div id="m1-RenelcoBMA_TimeClock-tgSettingsAUTOSynchro" class="m1-toggle5" 
+                         data-action-change-id="action102">
+                      <div id="m1-comp2">
+                        <input type="checkbox" name="tgSettingsAUTOSynchro"/>
+                      </div>
+                    </div>
+                    <div id="m1-RenelcoBMA_TimeClock-lblSettingsDebug" class="m1-text m1-font-6"
+                      >Debug Mode</div>
+                    <div id="m1-RenelcoBMA_TimeClock-tgSettingsDebug" class="m1-toggle5" 
+                         data-action-change-id="action103">
+                      <div id="m1-comp3">
+                        <input type="checkbox" name="tgSettingsDebug"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div id="m1-RenelcoBMA_TimeClock-panelToolBarSettings" class="m1-iscroll-wrapper m1-background-1 m1-border-5">
+              	<div id="m1-RenelcoBMA_TimeClock-btnCancelSettings">
+	                <img id="m1-RenelcoBMA_TimeClock-imgCancelSettings" class="m1-clickable m1-image" 
+	                  src="images/btn_cancel.png" data-action-click-id="action105"/>
+                </div>
+                <div id="m1-RenelcoBMA_TimeClock-btnSaveSettings">
+                <img id="m1-RenelcoBMA_TimeClock-imgSaveSettings" class="m1-clickable m1-image" src=
+                  "images/btn_save.png" data-action-click-id="action104"/>
+                </div>
+              </div>
+          </div>
+        </div>
+		<!-- MultiPage END -->
+		        
+        <div class="m1-aux-hidden-div">
+          <select id="m1-RenelcoBMA_TimeClock-hidden-select-cboAppConfigs" name="cboAppConfigs" 
+            data-action-change-id="action100">
+            <option value="-1" label="None" selected="">None</option>
+          </select>
+        </div>
+        <div class="m1-aux-hidden-div">
+          <select id="m1-RenelcoBMA_TimeClock-hidden-select-cboWorkOrders" name="cboWorkOrders" 
+            data-action-change-id="action7">
+            <option value="-1" label="None" selected="">None</option>
+            <option value="1" label="WorkOrder 1">WorkOrder 1</option>
+            <option value="2" label="WorkOrder 2">WorkOrder 2</option>
+            <option value="3" label="WorkOrder 3">WorkOrder 3</option>
+          </select>
+        </div>
+        <div class="m1-aux-hidden-div">
+          <select id="m1-RenelcoBMA_TimeClock-hidden-select-cboActivities" name="cboActivities" 
+            data-action-change-id="action8">
+            <option value="-1" label="None" selected="">None</option>
+            <option value="1" label="Activity 1">Activity 1</option>
+            <option value="2" label="Activity 2">Activity 2</option>
+            <option value="3" label="Activity 3">Activity 3</option>
+            <option value="4" label="Activity 4">Activity 4</option>
+            <option value="5" label="Activity 5">Activity 5</option>
+          </select>
+        </div>
+        <div class="m1-aux-hidden-div">
+          <select id="m1-RenelcoBMA_TimeClock-hidden-select-cboObturationTypes" name=
+            "cboObturationTypes" multiple="true" data-action-change-id="action77">
+            <option value="-1" label="None">None</option>
+          </select>
+        </div>
+        <div class="m1-aux-hidden-div">
+          <select id="m1-RenelcoBMA_TimeClock-hidden-select-cboDayTasksSummaryWorkOrders" name=
+            "cboDayTasksSummaryWorkOrders" data-action-change-id="action69">
+            <option value="-1" label="None" selected="">None</option>
+            <option value="1" label="WorkOrder 1">WorkOrder 1</option>
+            <option value="2" label="WorkOrder 2">WorkOrder 2</option>
+            <option value="3" label="WorkOrder 3">WorkOrder 3</option>
+          </select>
+        </div>
+        <div class="m1-aux-hidden-div">
+          <select id="m1-RenelcoBMA_TimeClock-hidden-select-cboDayTasksSummaryActivities" name=
+            "cboDayTasksSummaryActivities" data-action-change-id="action70">
+            <option value="-1" label="None" selected="">None</option>
+            <option value="1" label="Activity 1">Activity 1</option>
+            <option value="2" label="Activity 2">Activity 2</option>
+            <option value="3" label="Activity 3">Activity 3</option>
+            <option value="4" label="Activity 4">Activity 4</option>
+            <option value="5" label="Activity 5">Activity 5</option>
+          </select>
+        </div>
+        <div class="m1-aux-hidden-div">
+          <select id="m1-RenelcoBMA_TimeClock-hidden-select-cboWorkOrderMaterial" name=
+            "cboWorkOrderMaterial"></select>
+        </div>
+        <ul id="m1-RenelcoBMA_TimeClock-listMenu" class="m1-plain-list m1-list">
+          <li id="m1-RenelcoBMA_TimeClock-listItem1" 
+            class="m1-first m1-clickable m1-highlight m1-background-15 m1-background-16 m1-background-17"
+            data-action-click-id="action75">
+            <div id="m1-RenelcoBMA_TimeClock-txtMenuItem1" 
+              class="m1-text m1-font-15 m1-active-color-3">Settings</div>
+          </li>
+          <!-- 
+          <li id="m1-RenelcoBMA_TimeClock-listItem2" 
+            class="m1-clickable m1-highlight m1-background-15 m1-background-16 m1-background-17" 
+            data-action-click-id="action76">
+            <div id="m1-RenelcoBMA_TimeClock-txtMenuItem2" 
+              class="m1-text m1-font-15 m1-active-color-3">Contacts</div>
+          </li>
+          <li id="m1-RenelcoBMA_TimeClock-listItem3" 
+            class="m1-clickable m1-highlight m1-background-15 m1-background-16 m1-background-17" 
+            data-action-click-id="action78">
+            <div id="m1-RenelcoBMA_TimeClock-txtMenuItem3" 
+              class="m1-text m1-font-15 m1-active-color-3">Material</div>
+          </li>
+          <li id="m1-RenelcoBMA_TimeClock-listItem4" 
+            class="m1-clickable m1-highlight m1-background-15 m1-background-16 m1-background-17" 
+            data-action-click-id="action80">
+            <div id="m1-RenelcoBMA_TimeClock-txtMenuItem4" 
+              class="m1-text m1-active-color-2 m1-font-15">Sales Order</div>
+          </li>
+          <li id="m1-RenelcoBMA_TimeClock-listItem5" 
+            class="m1-clickable m1-highlight m1-background-15 m1-background-16 m1-background-17" 
+            data-action-click-id="action81">
+            <div id="m1-RenelcoBMA_TimeClock-txtMenuItem5" 
+              class="m1-text m1-font-15 m1-active-color-3">Assets</div>
+          </li>
+          <li id="m1-RenelcoBMA_TimeClock-listItem6" 
+            class="m1-clickable m1-highlight m1-background-15 m1-background-16 m1-background-17" 
+            data-action-click-id="action82">
+            <div id="m1-RenelcoBMA_TimeClock-txtMenuItem6" 
+              class="m1-text m1-font-15 m1-active-color-3">Travel Expenses</div>
+          </li>
+          <li id="m1-RenelcoBMA_TimeClock-listItem7" 
+            class="m1-clickable m1-highlight m1-background-15 m1-background-16 m1-background-17" 
+            data-action-click-id="action79">
+            <div id="m1-RenelcoBMA_TimeClock-txtMenuItem7" 
+              class="m1-text m1-font-15 m1-active-color-3">Employees Directory</div>
+          </li>
+          <li id="m1-RenelcoBMA_TimeClock-listItem8" 
+            class="m1-last m1-clickable m1-highlight m1-background-15 m1-background-16 m1-background-17"
+            data-action-click-id="action83">
+            <div id="m1-RenelcoBMA_TimeClock-txtMenuItem8" 
+              class="m1-text m1-font-15 m1-active-color-3">Reporting</div>
+          </li>
+          -->
+        </ul>
+        <div id="m1-images-preloader" class="m1-preload-images-1"></div>
+      </div>
+    </div>
+  </body>
+</html>
